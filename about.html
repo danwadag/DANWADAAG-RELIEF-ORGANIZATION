@@ -3,96 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danwadaag Relief Organization (DRO) | Home</title>
+    <title>About Us | Danwadaag Relief Organization</title>
     <style>
-        :root {
-            --primary: #2e7d32;
-            --secondary: #c2185b;
-            --dark: #222222;
-            --light: #f9f9f9;
-        }
+        :root { --primary: #2e7d32; --secondary: #c2185b; --dark: #222222; --light: #f9f9f9; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { color: var(--dark); line-height: 1.6; background-color: #ffffff; }
+        body { color: var(--dark); line-height: 1.7; background-color: #ffffff; }
         
         header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 15px 20px; }
         .logo-text { font-size: 24px; font-weight: bold; color: var(--primary); text-decoration: none; }
         .logo-text span { color: var(--secondary); }
-        nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+        nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; }
         nav a:hover, nav a.active { color: var(--primary); }
 
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; 
-            height: 85vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; margin-top: 60px; 
-        }
-        .hero h1 { font-size: 46px; margin-bottom: 20px; text-shadow: 1px 1px 10px rgba(0,0,0,0.5); }
-        .hero p { font-size: 20px; max-width: 800px; margin-bottom: 30px; }
+        .banner { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; padding: 100px 20px 60px 20px; color: white; text-align: center; margin-top: 60px; }
         
-        .btn { background-color: var(--secondary); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; display: inline-block; }
-        .btn:hover { background-color: #a01248; }
-        .btn-outline { background: transparent; border: 2px solid white; color: white; margin-left: 10px; }
-        .btn-outline:hover { background: white; color: var(--dark); }
-
-        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
-        h2 { text-align: center; font-size: 32px; margin-bottom: 40px; color: var(--primary); }
-        h2::after { content: ''; display: block; width: 60px; height: 3px; background-color: var(--secondary); margin: 10px auto 0 auto; }
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        h2 { color: var(--primary); margin-top: 40px; margin-bottom: 20px; font-size: 28px; border-left: 5px solid var(--secondary); padding-left: 15px; }
+        p { margin-bottom: 20px; font-size: 16px; color: #444; text-align: justify; }
         
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .feature-card { background: var(--light); padding: 40px 30px; border-radius: 8px; text-align: center; border-bottom: 4px solid var(--primary); }
-        .feature-card h3 { margin-bottom: 15px; color: #111; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; margin-top: 30px; }
+        .box { background: var(--light); padding: 30px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .box h3 { color: var(--primary); margin-bottom: 15px; }
         
-        .cta-section { background: #f0f4f1; text-align: center; padding: 60px 20px; }
-        footer { background-color: var(--dark); color: white; text-align: center; padding: 25px; font-size: 14px; }
+        ul { margin-left: 20px; margin-bottom: 20px; color: #444; }
+        ul li { margin-bottom: 10px; }
+        
+        footer { background-color: var(--dark); color: white; text-align: center; padding: 25px; margin-top: 60px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo-text">DRO <span>Somalia</span></a>
+            <a href="/DANWADAAG-RELIEF-ORGANIZATION/index.html" class="logo-text">DRO <span>Somalia</span></a>
             <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="programs.html">Our Programs</a>
-                <a href="contact.html">Contact & Donate</a>
+                <a href="/DANWADAAG-RELIEF-ORGANIZATION/index.html">Home</a>
+                <a href="/DANWADAAG-RELIEF-ORGANIZATION/about.html" class="active">About Us</a>
+                <a href="/DANWADAAG-RELIEF-ORGANIZATION/programs.html">Our Programs</a>
+                <a href="/DANWADAAG-RELIEF-ORGANIZATION/contact.html">Contact & Donate</a>
             </nav>
         </div>
     </header>
 
-    <div class="hero">
-        <h1>Danwadaag Relief Organization</h1>
-        <p>Providing critical emergency response, resilience programs, and sustainable livelihood support across South-West State, Somalia.</p>
-        <div>
-            <a href="programs.html" class="btn">Explore Our Programs</a>
-            <a href="contact.html" class="btn btn-outline">Support Us</a>
-        </div>
+    <div class="banner">
+        <h1 style="font-size: 36px;">About Our Organization</h1>
+        [span_10](start_span)<p style="font-size: 18px; max-width: 700px; margin: 10px auto 0 auto; color: #ddd;">Discover the history, institutional commitments, values, and principles guiding DRO in South-West Somalia[span_10](end_span).</p>
     </div>
 
-    <section>
-        <h2>Our Core Pillars</h2>
-        <div class="grid-3">
-            <div class="feature-card">
-                <h3>Emergency & Humanitarian Aid</h3>
-                <p>Rapid deployment of water, nutritional medical supplies, and shelter kits to internally displaced persons (IDPs) and populations hit by drought or conflict.</p>
-                <br><a href="programs.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">Read More &rarr;</a>
+    <div class="container">
+        <h2>Institutional Background</h2>
+        [span_11](start_span)<p>Danwadaag Relief Organization (DRO) is a local non-profit, non-governmental organization headquartered in Baidoa town, with active sub-offices across the regions of Somalia[span_11](end_span). [span_12](start_span)Initiated in November 2023 by a dedicated group of intellectuals and well-wishers, DRO answers critical calls for human assistance and community development[span_12](end_span).</p>
+        [span_13](start_span)<p>DRO operates as a specialized community-based group working for humanitarian relief with close operational collaboration with UN Agencies and International organizations[span_13](end_span). [span_14](start_span)Our focus fields structurally counter the vulnerabilities affecting regional populations impacted by severe natural disasters and sudden disease outbreaks[span_14](end_span).</p>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Our Strategic Mission</h3>
+                [span_15](start_span)<p>To eradicate poverty, provide quality social services, health, and clean water while promoting a high standard of living for IDPs and vulnerable community cohorts to achieve sustainable solutions for all[span_15](end_span).</p>
             </div>
-            <div class="feature-card">
-                <h3>Sustainable Development</h3>
-                <p>Empowering smallholder farmers, creating rural economic growth frameworks, and building durable local infrastructures to fight deep-rooted rural poverty.</p>
-                <br><a href="programs.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">Read More &rarr;</a>
-            </div>
-            <div class="feature-card">
-                <h3>Protection & Social Welfare</h3>
-                <p>Institutionalizing child tracking frameworks, safeguarding child rights, and scaling up clinical options to eliminate Gender-Based Violence (GBV).</p>
-                <br><a href="programs.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">Read More &rarr;</a>
+            <div class="box">
+                <h3>Our Vision Matrix</h3>
+                [span_16](start_span)<p>Upgrading the living standards of the vulnerable groups and young generations by mobilizing their conscious awareness on ownership feelings, effectively transforming dependence into sustainable self-reliance[span_16](end_span).</p>
             </div>
         </div>
-    </section>
 
-    <div class="cta-section">
-        <h3 style="font-size: 24px; margin-bottom: 15px;">Partner with Danwadaag Relief Organization</h3>
-        <p style="max-width: 700px; margin: 0 auto 20px auto; color: #555;">We collaborate heavily with UN Agencies, international groups, and local stakeholders to drive structural transformations in Bay, Bakool, and Lower Shebelle.</p>
-        <a href="contact.html" class="btn">Get In Touch</a>
+        <h2>Core Ethical Values & Governing Principles</h2>
+        <p>Every field deployment, development project, and team action carried out by Danwadaag Relief Organization aligns strictly with our institutional ethics:</p>
+        
+        <div class="grid-2">
+            <div class="box" style="border-top: 3px solid var(--primary);">
+                [span_17](start_span)<h4 style="font-size: 18px; margin-bottom: 10px; color: var(--primary);">Core Institutional Values[span_17](end_span)</h4>
+                <ul>
+                    [span_18](start_span)<li><strong>Linear Transparency & Accountability:</strong> Maintaining clear communication channels for funding agencies and civil recipients[span_18](end_span).</li>
+                    [span_19](start_span)<li><strong>Volunteerism & Social Responsibility:</strong> Driving personal civic actions to reconstruct structural safety[span_19](end_span).</li>
+                    [span_20](start_span)<li><strong>Respect for Diversity:</strong> Delivering unconditional aid regardless of community background[span_20](end_span).</li>
+                    [span_21](start_span)<li><strong>Active Collaboration:</strong> Sharing project insights to prevent work duplication[span_21](end_span).</li>
+                </ul>
+            </div>
+            <div class="box" style="border-top: 3px solid var(--secondary);">
+                [span_22](start_span)<h4 style="font-size: 18px; margin-bottom: 10px; color: var(--secondary);">Core Guiding Principles[span_22](end_span)</h4>
+                <ul>
+                    [span_23](start_span)<li><strong>Independence:</strong> Actions stay strictly isolated from political or military groups[span_23](end_span).</li>
+                    [span_24](start_span)<li><strong>Strict Neutrality:</strong> Maintaining non-aligned spaces during local friction corridors[span_24](end_span).</li>
+                    [span_25](start_span)<li><strong>Impartiality & Humanity:</strong> Human suffering must be targeted with speed, prioritized entirely on emergency necessity[span_25](end_span).</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Primary Beneficiaries & Target Groups</h2>
+        [span_26](start_span)<p>Our organization centers field work on people requiring distinct legal care, camp safety, and support systems[span_26](end_span):</p>
+        <ul>
+            [span_27](start_span)[span_28](start_span)<li>Internally Displaced Persons (IDPs) within camps missing standard public services[span_27](end_span)[span_28](end_span).</li>
+            [span_29](start_span)<li>Families dealing with severe social segregation, migrant lineages, or deep household poverty[span_29](end_span).</li>
+            [span_30](start_span)<li>Children growing up without direct parental care, kids impacted by environment shifts, or survivors of harmful traditional systems like child marriage and FGM[span_30](end_span).</li>
+        </ul>
     </div>
 
     <footer>
