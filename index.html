@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danwadaag Relief Organization (DRO)</title>
+    <style>
+        /* Modern & Clean Styling */
+        :root {
+            --primary: #2e7d32; /* Green for Agriculture & Growth */
+            --secondary: #c2185b; /* Pink accent from your logo */
+            --dark: #333333;
+            --light: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3') no-repeat center center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #a01248;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            position: relative;
+            color: var(--primary);
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+            margin: 10px auto 0 auto;
+        }
+
+        /* Grid Framework for Programs */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        /* Core Values & Principles Grid */
+        .values-box {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        /* Contact & Bank Details Split */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info, .bank-info {
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; }
+            nav { margin-top: 15px; }
+            .hero h1 { font-size: 32px; }
+            .contact-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-text">DRO <span>Somalia</span></div>
+            <nav>
+                <a href="#about">About Us</a>
+                <a href="#programs">Our Programs</a>
+                <a href="#contact">Contact & Donate</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Danwadaag Relief Organization</h1>
+        <p>A dedicated local humanitarian non-profit working to uplift vulnerabilities, provide emergencies response, and build sustainable solutions in Southwest State, Somalia.</p>
+        <a href="#contact" class="btn">Support Our Mission</a>
+    </div>
+
+    <section id="about">
+        <h2>Who We Are</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto; font-size: 18px;">
+            Initiated in November 2023 by a group of intellectuals and well-wishers, DRO focuses on aspects of emergencies, humanitarian responses, and resilience programs in close collaboration with UN agencies and international organizations.
+        </p>
+        
+        <div class="grid">
+            <div class="card" style="border-top-color: var(--secondary);">
+                <h3>Our Mission</h3>
+                <p>To eradicate poverty, provide quality social services, health, and water to promote high standard living of IDPs and vulnerabilities to achieve sustainable solutions for all.</p>
+            </div>
+            <div class="card" style="border-top-color: var(--secondary);">
+                <h3>Our Vision</h3>
+                <p>Upgrading living standards of the vulnerable groups and young generations by mobilizing their conscious awareness on ownership feelings transforming into self-reliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #fafafa; max-width: 100%; width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="grid">
+                <div class="values-box">
+                    <h3 style="margin-bottom: 15px;">Core Values</h3>
+                    <ul>
+                        <li>Transparency & Accountability</li>
+                        <li>Volunteerism & Social Responsibility</li>
+                        <li>Respect for Diversity</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </div>
+                <div class="values-box" style="background-color: var(--dark);">
+                    <h3 style="margin-bottom: 15px;">Guiding Principles</h3>
+                    <ul>
+                        <li>Independence</li>
+                        <li>Neutrality</li>
+                        <li>Impartiality & Humanity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <h2>Core Programs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Primary Health Care & Nutrition</h3>
+                <p>Improving access to healthcare services for IDPs and host communities through mobile clinics, alongside managing and preventing malnutrition among children under five and mothers.</p>
+            </div>
+            <div class="card">
+                <h3>WASH Services</h3>
+                <p>Supplying safe water, providing gender-segregated latrines, conducting active disease surveillance, and managing solid waste to prevent disease outbreaks in communities.</p>
+            </div>
+            <div class="card">
+                <h3>Child Protection & Education</h3>
+                <p>Strengthening family/community structures, raising public awareness on child rights, and supporting child-centered training to safeguard vulnerable children.</p>
+            </div>
+            <div class="card">
+                <h3>Agriculture & Poverty Reduction</h3>
+                <p>Ensuring food security and improving the livelihoods of small farmers on a sustainable basis while working on strategic frameworks to alleviate rural poverty.</p>
+            </div>
+            <div class="card">
+                <h3>IDPs & Protection Support</h3>
+                <p>Mitigating the root causes of internal displacement, protecting fundamental human rights, and building resilient frameworks to help communities recover.</p>
+            </div>
+            <div class="card">
+                <h3>SGBV Prevention</h3>
+                <p>Reinforcing institutional support services available to victims, advocating against gender-based violence, and driving long-term positive behavior change.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #f0f4f1; max-width: 100%; width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2>Contact & Support</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Headquarters</h3>
+                    <p>Baidoa, Southwest State - Somalia</p>
+                    <br>
+                    <h3>Mobile Contact</h3>
+                    <p>+252615719162 / +252619305130</p>
+                    <br>
+                    <h3>Email Address</h3>
+                    <p><a href="mailto:dro.org.som@gmail.com" style="color: var(--primary);">dro.org.som@gmail.com</a></p>
+                </div>
+                <div class="bank-info" style="border-top: 4px solid var(--secondary);">
+                    <h3>Support Our Operations</h3>
+                    <p>To coordinate partner grants, project funding, or local donations, please find our verified banking details below:</p>
+                    <br>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="padding: 8px 0; font-weight: bold;">Bank Name:</td>
+                            <td>Salaam Somali Bank</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; font-weight: bold;">Target Areas:</td>
+                            <td>Bay, Bakool, & Lower Shebelle regions</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Danwadaag Relief Organization (DRO). All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
