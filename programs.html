@@ -3,112 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Programmatic Areas | DRO Somalia</title>
+    <title>DRO Programs | Interactive Operational Blueprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #1b5e20; --secondary: #b71c1c; --dark: #222222; --light: #fdfdfd; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { color: var(--dark); line-height: 1.7; background-color: #f5f7f5; }
+        :root { --primary: #1b5e20; --primary-light: #e8f5e9; --secondary: #b71c1c; --dark: #0f172a; --light: #f8fafc; --gray: #64748b; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body { color: var(--dark); line-height: 1.7; background-color: #ffffff; padding-top: 85px; }
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 30px rgba(0,0,0,0.03); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 18px 20px; }
+        .logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-text { font-size: 22px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+        nav a { text-decoration: none; color: var(--dark); margin-left: 25px; font-weight: 600; font-size: 15px; padding: 6px 0; border-bottom: 2px solid transparent; }
+        nav a:hover, nav a.active { color: var(--primary); border-bottom-color: var(--secondary); }
         
-        header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 15px 20px; }
-        .logo-text { font-size: 24px; font-weight: bold; color: var(--primary); text-decoration: none; text-transform: uppercase; }
-        .logo-text span { color: var(--secondary); }
-        nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 600; }
-        nav a:hover, nav a.active { color: var(--primary); }
+        .page-header { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1469571486040-4b9b17502f54?auto=format&fit=crop&w=1200&q=80'); padding: 50px 20px; text-align: center; color: white; }
+        
+        /* Tab Navigation Sidebar Layout */
+        .dashboard-container { max-width: 1200px; margin: 40px auto; display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding: 0 20px; }
+        .tabs-sidebar { display: flex; flex-direction: column; gap: 8px; }
+        .tab-btn { background: var(--light); border: 1px solid #e2e8f0; padding: 15px 20px; text-align: left; font-size: 15px; font-weight: 600; color: var(--dark); border-radius: 6px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 12px; }
+        .tab-btn:hover, .tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+        
+        .content-panel { background: white; border: 1px solid #e2e8f0; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.01); display: none; }
+        .content-panel.active { display: block; animation: fadeIn 0.4s ease; }
+        
+        .content-panel h2 { text-align: left; margin-bottom: 20px; color: var(--primary); font-size: 28px; }
+        .content-panel h2::after { display: none; }
+        .content-panel ul { list-style-position: inside; margin-top: 15px; margin-bottom: 15px; }
+        .content-panel ul li { margin-bottom: 8px; color: #475569; }
 
-        .banner { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; padding: 120px 20px 60px 20px; color: white; text-align: center; margin-top: 60px; }
-        
-        .container { max-width: 1000px; margin: 50px auto; padding: 10px 20px; }
-        .program-block { background: #fff; border-radius: 8px; padding: 40px; margin-bottom: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border-top: 4px solid var(--primary); }
-        .program-block h2 { color: var(--primary); font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px; font-weight: 700; }
-        
-        .badge { background: var(--secondary); color: white; padding: 5px 14px; font-size: 11px; font-weight: bold; border-radius: 4px; text-transform: uppercase; display: inline-block; margin-bottom: 15px; letter-spacing: 0.5px; }
-        
-        h4 { color: #111; margin-top: 20px; margin-bottom: 8px; font-size: 16px; font-weight: 700; }
-        ul, ol { margin-left: 25px; margin-bottom: 15px; color: #444; }
-        ul li, ol li { margin-bottom: 8px; font-size: 15px; }
-        p { color: #444; margin-bottom: 15px; text-align: justify; font-size: 15.5px; }
-
-        footer { background-color: #111; color: #aaa; text-align: center; padding: 25px; margin-top: 60px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @media(max-width: 768px) { .dashboard-container { grid-template-columns: 1fr; } }
+        footer { background-color: #0f172a; color: #94a3b8; text-align: center; padding: 40px 20px; font-size: 14px; border-top: 4px solid var(--primary); }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <a href="/DANWADAAG-RELIEF-ORGANIZATION/index.html" class="logo-text">DRO <span>Somalia</span></a>
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo.png" alt="DRO Logo" style="height: 48px; width: auto;" onerror="this.style.display='none'">
+                <div class="logo-text">DRO <span style="color: #b71c1c; display: block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;">Somalia</span></div>
+            </a>
             <nav>
-                <a href="/DANWADAAG-RELIEF-ORGANIZATION/index.html">Home</a>
-                <a href="/DANWADAAG-RELIEF-ORGANIZATION/about.html">About Us</a>
-                <a href="/DANWADAAG-RELIEF-ORGANIZATION/programs.html" class="active">Our Programs</a>
-                <a href="/DANWADAAG-RELIEF-ORGANIZATION/contact.html">Contact & Donate</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="programs.html" class="active">Our Programs</a>
+                <a href="contact.html">Contact & Donate</a>
             </nav>
         </div>
     </header>
 
-    <div class="banner">
-        <h1 style="font-size: 36px;">Core Programmatic Operations</h1>
-        <p style="font-size: 18px; max-width: 700px; margin: 10px auto 0 auto; color: #ddd;">Technical frameworks and multi-sector strategies across South-West State.</p>
+    <div class="page-header">
+        <h1 style="font-size: 34px; font-weight: 800;">Integrated Programmatic Sectors</h1>
+        <p style="color: #cbd5e1; margin-top: 8px;">Explore technical indicators across our nine core intervention sectors.</p>
     </div>
 
-    <div class="container">
-
-        <div class="program-block">
-            <span class="badge">Sector 01</span>
-            <h2>Primary Health Care & Nutrition</h2>
-            <p><strong>Strategic Focus:</strong> DRO scales up clinical accessibility to curb acute child and mother mortality rates stemming from preventable disease clusters. Our framework acts as an operational defense against endemic disease surges.</p>
-            <h4>Operational Targets:</h4>
-            <ul>
-                <li>Deploying targeted mobile outreach clinics into isolated IDP camp grids and rural host areas.</li>
-                <li>Comprehensive management, diagnostic screening, and specialized supplementary therapeutic feeding for children under five, pregnant women, and lactating mothers.</li>
-                <li>Systematic delivery of localized maternal healthcare instruction, micronutrient therapy, and community breastfeeding training.</li>
-            </ul>
+    <div class="dashboard-container">
+        <div class="tabs-sidebar">
+            <button class="tab-btn active" data-tab="health"><i class="fa-solid fa-house-medical"></i> 1. Health & Nutrition</button>
+            <button class="tab-btn" data-tab="wash"><i class="fa-solid fa-faucet-drip"></i> 2. WASH Infrastructure</button>
+            <button class="tab-btn" data-tab="child-protection"><i class="fa-solid fa-child"></i> 3. Child Protection</button>
+            <button class="tab-btn" data-tab="poverty"><i class="fa-solid fa-wheat-awn"></i> 4. Rural Poverty</button>
+            <button class="tab-btn" data-tab="agriculture"><i class="fa-solid fa-tractor"></i> 5. Sustainable Agriculture</button>
+            <button class="tab-btn" data-tab="idps"><i class="fa-solid fa-person-walking-luggage"></i> 6. IDP Systems</button>
+            <button class="tab-btn" data-tab="gbv"><i class="fa-solid fa-person-circle-exclamation"></i> 7. GBV Mitigation</button>
+            <button class="tab-btn" data-tab="education"><i class="fa-solid fa-graduation-cap"></i> 8. Formal Education</button>
+            <button class="tab-btn" data-tab="protection"><i class="fa-solid fa-shield-halved"></i> 9. Human Rights Protection</button>
         </div>
 
-        <div class="program-block" style="border-top-color: var(--secondary);">
-            <span class="badge" style="background-color: var(--primary);">Sector 02</span>
-            <h2>Water, Sanitation & Hygiene (WASH)</h2>
-            <p><strong>Strategic Focus:</strong> For communities displaced by ongoing conflict or severe drought cyclical patterns, safe water infrastructure is the ultimate foundation for survival. DRO builds community-managed sanitation systems to systematically reduce diarrheal disease loads.</p>
-            <h4>Key Framework Focus Areas:</h4>
-            <ul>
-                <li><strong>Safe Water Supply:</strong> Delivering clean water for drinking, cooking, personal hygiene, and household usage.</li>
-                <li><strong>Gender-Segregated Infrastructure:</strong> Building and maintaining safe, family-unit or gender-segregated latrines to protect women, girls, and children.</li>
-                <li><strong>Disease Control & Solid Waste:</strong> Running active surveillance alongside vector-breeding control via site drainage and garbage management.</li>
-                <li><strong>School-Based WASH:</strong> Restoring hygienic latrine grids inside schools to keep girls enrolled and active in learning.</li>
-            </ul>
-        </div>
+        <div class="main-dashboard-panels">
+            
+            <div class="content-panel active" id="health">
+                <h2>Primary Health & Nutrition Framework</h2>
+                [span_45](start_span)<p><strong>Objective:</strong> Improve availability of and access to health care services for IDPs and host communities, focusing on vulnerable children via mobile clinics[span_45](end_span).</p>
+                <ul>
+                    [span_46](start_span)<li>Management and prevention of acute malnutrition among under-fives and lactating mothers[span_46](end_span).</li>
+                    [span_47](start_span)<li>Deployment of direct mobile healthcare delivery for prevalent infection arrays (Malaria, Measles, Diarrhea)[span_47](end_span).</li>
+                    [span_48](start_span)<li>Systematic implementation of exclusive breastfeeding instruction and proper nutrition education pathways[span_48](end_span).</li>
+                </ul>
+            </div>
 
-        <div class="program-block">
-            <span class="badge">Sector 03</span>
-            <h2>Child Protection Frameworks</h2>
-            <p><strong>Strategic Focus:</strong> Establishing institutional networks and family-focused structures to safeguard children from systemic risk, labor exploitation, and conflict vulnerabilities. We treat child institutionalization as a strict measure of last resort.</p>
-            <h4>Operational Benchmarks:</h4>
-            <ul>
-                <li>Designing localized tracking databases and custom information systems for community emergency protection monitoring.</li>
-                <li>Empowering local child protection committees to monitor child right vulnerabilities.</li>
-                <li>Active interventions against traditional harmful mechanisms, including child marriages and female genital mutilation (FGM).</li>
-            </ul>
-        </div>
+            <div class="content-panel" id="wash">
+                <h2>Water, Sanitation & Hygiene Promotion (WASH)</h2>
+                [span_49](start_span)[span_50](start_span)<p>For populations displaced by conflict, access to clean drinking water is an urgent, non-negotiable right[span_49](end_span)[span_50](end_span).</p>
+                <ul>
+                    [span_51](start_span)<li>Supplying safe water systems for drinking, cooking, household cleaning, and personal hygiene needs[span_51](end_span).</li>
+                    [span_52](start_span)<li>Constructing and maintaining sex-segregated latrines safe for women, girls, men, and boys at all times[span_52](end_span).</li>
+                    [span_53](start_span)<li>Active field disease surveillance and immediate water-quality vigilance during acute vector outbreaks[span_53](end_span).</li>
+                    [span_54](start_span)[span_55](start_span)<li>Measuring baseline impacts of water purification on infant development in the first year of life[span_54](end_span)[span_55](end_span).</li>
+                </ul>
+            </div>
 
-        <div class="program-block" style="border-top-color: var(--secondary);">
-            <span class="badge" style="background-color: var(--primary);">Sector 04</span>
-            <h2>Humanitarian Program Cycle (HPC)</h2>
-            <p>In compliance with global standards, all emergency responses deployed by DRO follow a strict 5-stage lifecycle configuration:</p>
-            <ol>
-                <li>Rapid multi-sector needs assessment and field-level verification analysis.</li>
-                <li>Strategic response planning.</li>
-                <li>Resource mobilization and donor coordination tracking.</li>
-                <li>Field-level deployment and rigorous project monitoring.</li>
-                <li>Operational reviews, third-party evaluations, and data adjustments.</li>
-            </ol>
-            <p><em>Immediate assistance items include clean water supplies, emergency medical packs, tents, food items, and critical hygiene materials.</em></p>
-        </div>
+            <div class="content-panel" id="child-protection">
+                <h2>Comprehensive Child Protection Networks</h2>
+                [span_56](start_span)[span_57](start_span)<p><strong>Mandate:</strong> Institutionalizing essential safety metrics, community-based care networks, and data mapping setups[span_56](end_span)[span_57](end_span).</p>
+                <ul>
+                    [span_58](start_span)<li>Creating explicit knowledge-base tracking tools and database MIS systems for child verification[span_58](end_span).</li>
+                    [span_59](start_span)<li>Establishing targeted measures to safeguard displaced minors from child labor and exploitation[span_59](end_span).</li>
+                    [span_60](start_span)<li>Active local engagement to eliminate harmful traditional practices (FGM and child marriage risks)[span_60](end_span).</li>
+                    [span_61](start_span)<li>Enforcing guidelines treating institutionalization strictly as a measure of last resort[span_61](end_span).</li>
+                </ul>
+            </div>
 
+            <div class="content-panel" id="poverty">
+                <h2>Reduce Rural Poverty</h2>
+                [span_62](start_span)[span_63](start_span)<p>Developing structural frameworks to counter resource shortages, lack of asset ownership, and economic marginalization[span_62](end_span)[span_63](end_span).</p>
+                <ul>
+                    [span_64](start_span)<li>Promoting structural mechanisms for wide, broad-based economic growth vectors across disconnected zones[span_64](end_span).</li>
+                    [span_65](start_span)<li>Securing equitable community access to local finance networks, micro-credit lines, and infrastructural assets[span_65](end_span).</li>
+                    [span_66](start_span)[span_67](start_span)<li>Supporting social updates by upgrading school infrastructure layouts and public health systems[span_66](end_span)[span_67](end_span).</li>
+                </ul>
+            </div>
+
+            <div class="content-panel" id="agriculture">
+                <h2>Sustainable Agriculture Operations</h2>
+                [span_68](start_span)<p><strong>Target:</strong> Ensuring immediate food security, localized poverty alleviation, and smallholder farming employment stability[span_68](end_span).</p>
+                <ul>
+                    [span_69](start_span)<li>Optimizing available production assets while minimizing reliance on non-renewable external inputs[span_69](end_span).</li>
+                    [span_70](start_span)<li>Mitigating systemic crop yield deficits through aggressive local variety improvements and technical training[span_70](end_span).</li>
+                    [span_71](start_span)<li>Constructing public-private operational marketing pathways to convert natural resources into viable business enterprises[span_71](end_span).</li>
+                </ul>
+            </div>
+
+            <div class="content-panel" id="idps">
+                <h2>Internally Displaced Persons (IDP) Protection Desks</h2>
+                [span_72](start_span)<p>Mitigating the root institutional causes of sudden, forced internal displacement across Southwest State[span_72](end_span).</p>
+                <ul>
+                    [span_73](start_span)<li>Enforcing localized solidarity networks to coordinate legal protections for displaced families[span_73](end_span).</li>
+                    [span_74](start_span)<li>Defining structural responsibilities and protective rules for civil society networks on the ground[span_74](end_span).</li>
+                    [span_75](start_span)<li>Direct delivery of non-food items, emergency tents, and immediate nutritional survival sets[span_75](end_span).</li>
+                </ul>
+            </div>
+
+            <div class="content-panel" id="gbv">
+                <h2>Gender-Based Violence (GBV) Support Systems</h2>
+                [span_76](start_span)<p>Reinforcing legal and medical support structures across regional institutions to counter rights denials[span_76](end_span).</p>
+                <ul>
+                    [span_77](start_span)<li>Constructing inter-institutional tracking grids to provide safe, confidential recovery environments[span_77](end_span).</li>
+                    [span_78](start_span)[span_79](start_span)<li>Advocating for unified regional responses and executing behavioral modification updates[span_78](end_span)[span_79](end_span).</li>
+                    [span_80](start_span)<li>Standardizing data indicators to tracking protection levels in isolated camps[span_80](end_span).</li>
+                </ul>
+            </div>
+
+            <div class="content-panel" id="education">
+                <h2>Formal & Vocational Education</h2>
+                [span_81](start_span)[span_82](start_span)<p>Formulating objective, value-oriented programs that prepare individuals for meaningful community integration[span_81](end_span)[span_82](end_span).</p>
+                <ul>
+                    [span_83](start_span)[span_84](start_span)<li>Developing physical and mental faculties, turning young generations towards self-reliance[span_83](end_span)[span_84](end_span).</li>
+                    [span_85](start_span)<li>Executing modern work-experience programs and vocational training to lower post-school mental stress[span_85](end_span).</li>
+                    [span_86](start_span)<li>Implementing distinct support tracks encouraging girls and marginalized groups to remain in school[span_86](end_span).</li>
+                </ul>
+            </div>
+
+            <div class="content-panel" id="protection">
+                <h2>Human Rights & Legal Protection Desks</h2>
+                [span_87](start_span)<p>Mobilizing natural assets to secure basic constitutional protections for marginalized sections[span_87](end_span).</p>
+                <ul>
+                    [span_88](start_span)[span_89](start_span)<li>Training young practitioners to build communal harmony, mutual brotherhood, and regional peace[span_88](end_span)[span_89](end_span).</li>
+                    [span_90](start_span)<li>Conducting scientific research on socioeconomic blockages inside rural communities[span_90](end_span).</li>
+                    [span_91](start_span)<li>Organizing specialized legal protection tracking systems focused heavily on child and women's welfare[span_91](end_span).</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Danwadaag Relief Organization (DRO). All Rights Reserved.</p>
+        <p>&copy; 2026 Danwadaag Relief Organization (DRO). Institutional Operations Register, Baidoa, Somalia. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.content-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active states
+                tabs.forEach(t => t.classList.remove('active'));
+                panels.forEach(p => p.classList.remove('active'));
+
+                // Add active states to target elements
+                tab.classList.add('active');
+                const targetId = tab.getAttribute('data-tab');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
