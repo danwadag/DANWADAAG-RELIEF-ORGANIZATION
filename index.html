@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danwadaag Relief Organization (DRO) | Somalia</title>
+    <title>Danwadaag Relief Organization (DRO) | Institutional Portal</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Strict Corporate Brand Identity System */
+        /* Strict Corporate Identity Color System */
         :root {
-            --primary: #1b5e20;        /* Premium Deep Green */
-            --primary-light: #e8f5e9;  /* Light Green Accent */
+            --primary: #1b5e20;        /* Deep Premium Green */
+            --primary-light: #e8f5e9;  /* Light Mint Accent Accent */
             --secondary: #b71c1c;      /* Deep Humanitarian Red */
             --dark: #0f172a;           /* Obsidian Slate Gray */
-            --light: #f8fafc;          /* High-End Studio Gray */
-            --border: #e2e8f0;         /* Soft Border Line Splitter */
+            --light: #f8fafc;          /* Studio Gray Background */
+            --border: #e2e8f0;         /* Fine Separator Line Splitter */
             --shadow: rgba(15, 23, 42, 0.05);
         }
 
-        /* Enforced Global Typography - Absolutely Forces Every Font to be Uniform */
+        /* Enforced Typography Reset */
         * { 
             box-sizing: border-box; 
             margin: 0; 
@@ -36,7 +36,7 @@
             scroll-behavior: smooth; 
         }
 
-        /* Premium Fixed Navigation Header Bar */
+        /* Fixed Corporate Header Bar */
         header { 
             background: rgba(255, 255, 255, 0.98); 
             backdrop-filter: blur(12px); 
@@ -51,12 +51,11 @@
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
-            max-width: 1280px; 
+            max-width: 1400px; 
             margin: 0 auto; 
             padding: 16px 24px; 
         }
         
-        /* Clean Aligned Logo and Text Title Wrapper */
         .logo-wrapper { 
             display: flex; 
             align-items: center; 
@@ -82,14 +81,14 @@
         
         nav { 
             display: flex; 
-            gap: 32px; 
+            gap: 28px; 
             align-items: center; 
         }
         nav a { 
             text-decoration: none; 
             color: var(--dark); 
             font-weight: 600; 
-            font-size: 15px; 
+            font-size: 14.5px; 
             transition: 0.2s; 
             padding: 6px 0; 
             border-bottom: 2px solid transparent; 
@@ -101,7 +100,7 @@
         .nav-btn { 
             background: var(--primary); 
             color: white !important; 
-            padding: 10px 22px; 
+            padding: 10px 20px; 
             border-radius: 6px; 
             border-bottom: none !important; 
         }
@@ -109,10 +108,10 @@
             background: #134517; 
         }
 
-        /* High-Impact Hero Segment Banner */
+        /* Hero Entry Section Banner */
         .hero { 
             background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; 
-            min-height: 75vh; 
+            min-height: 65vh; 
             color: white; 
             display: flex; 
             flex-direction: column; 
@@ -133,26 +132,25 @@
             margin-bottom: 22px; 
         }
         .hero h1 { 
-            font-size: 54px; 
+            font-size: 50px; 
             font-weight: 800; 
             margin-bottom: 24px; 
             letter-spacing: -1.5px; 
-            max-width: 900px; 
+            max-width: 950px; 
             line-height: 1.15; 
         }
         .hero p { 
-            font-size: 19px; 
-            max-width: 760px; 
+            font-size: 18.5px; 
+            max-width: 780px; 
             margin-bottom: 38px; 
             color: #cbd5e1; 
             font-weight: 300; 
         }
         
-        /* Master Interaction Buttons */
         .btn { 
             background-color: var(--secondary); 
             color: white; 
-            padding: 14px 32px; 
+            padding: 14px 30px; 
             text-decoration: none; 
             border-radius: 6px; 
             font-weight: 600; 
@@ -180,18 +178,20 @@
             color: var(--dark); 
         }
 
-        /* Balanced Layout Framework Blocks */
+        /* Segment Grid Systems */
         .section { 
-            padding: 100px 24px; 
-            max-width: 1280px; 
+            padding: 90px 24px; 
+            max-width: 1400px; 
             margin: 0 auto; 
         }
         .section-bg { 
             background-color: var(--light); 
-            padding: 100px 24px; 
+            padding: 90px 24px; 
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
         .section-inner { 
-            max-width: 1280px; 
+            max-width: 1400px; 
             margin: 0 auto; 
         }
         
@@ -207,7 +207,7 @@
         }
         h2 { 
             text-align: center; 
-            font-size: 38px; 
+            font-size: 36px; 
             margin-bottom: 15px; 
             color: var(--dark); 
             font-weight: 800; 
@@ -224,13 +224,13 @@
         }
         .section-desc { 
             text-align: center; 
-            max-width: 650px; 
-            margin: 0 auto 60px; 
+            max-width: 700px; 
+            margin: 0 auto 55px; 
             color: #64748b; 
-            font-size: 16.5px; 
+            font-size: 16px; 
         }
 
-        /* Clean Organization Mission Layout Grid */
+        /* Philosophy Text Cards */
         .philosophy-grid { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -240,27 +240,27 @@
             border-radius: 16px; 
             padding: 45px; 
             box-shadow: 0 10px 30px var(--shadow); 
-            margin-bottom: 60px; 
+            margin-bottom: 50px; 
         }
         .philosophy-block h3 { 
-            font-size: 24px; 
+            font-size: 22px; 
             color: var(--primary); 
             font-weight: 700; 
             margin-bottom: 15px; 
         }
         .philosophy-quote { 
             font-style: italic; 
-            font-size: 18px; 
+            font-size: 17.5px; 
             color: #334155; 
             line-height: 1.6; 
             border-left: 4px solid var(--secondary); 
             padding-left: 20px; 
         }
 
-        /* Clean 9-Sector Interactive Grid Matrix */
+        /* 9-Sector Layout Grid Engine */
         .sectors-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
             gap: 24px; 
         }
         .sector-card { 
@@ -346,7 +346,96 @@
             color: var(--secondary); 
         }
 
-        /* Smooth Interactive Side Drawer Component */
+        /* Massive 38-Page Registry Document Vault Component */
+        .vault-container {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 12px 36px var(--shadow);
+            overflow: hidden;
+            margin-top: 30px;
+        }
+        .vault-header {
+            background: var(--dark);
+            color: white;
+            padding: 24px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .vault-tabs {
+            display: flex;
+            background: #1e293b;
+            padding: 8px 12px;
+            gap: 8px;
+            overflow-x: auto;
+        }
+        .vault-tab-btn {
+            background: transparent;
+            color: #94a3b8;
+            border: none;
+            padding: 10px 18px;
+            font-size: 13.5px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+        .vault-tab-btn.active, .vault-tab-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        .vault-tab-btn:nth-child(even).active {
+            background: var(--secondary);
+        }
+        .vault-viewer {
+            padding: 45px;
+            max-height: 650px;
+            overflow-y: auto;
+            background: #fafafa;
+        }
+        .vault-page {
+            display: none;
+        }
+        .vault-page.active {
+            display: block;
+        }
+        .vault-content-text {
+            background: white;
+            padding: 40px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 15px;
+            color: #334155;
+            white-space: pre-line;
+            line-height: 1.7;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .vault-content-text h3 {
+            font-size: 22px;
+            color: var(--dark);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 800;
+        }
+        .vault-content-text h4 {
+            font-size: 16px;
+            color: var(--primary);
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .vault-content-text ul, .vault-content-text ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        .vault-content-text li {
+            margin-bottom: 8px;
+        }
+
+        /* Slide Out Drawer Layout */
         .drawer-overlay { 
             position: fixed; 
             top: 0; 
@@ -367,9 +456,9 @@
         .drawer-content { 
             position: fixed; 
             top: 0; 
-            right: -650px; 
+            right: -700px; 
             width: 100%; 
-            max-width: 620px; 
+            max-width: 680px; 
             height: 100%; 
             background: white; 
             z-index: 2001; 
@@ -394,136 +483,30 @@
             color: var(--secondary); 
         }
         
-        .drawer-body h3 { 
-            font-size: 24px; 
-            font-weight: 800; 
-            color: var(--dark); 
-            margin-bottom: 12px; 
-            margin-top: 15px; 
-            line-height: 1.2;
-        }
-        .drawer-body p { 
-            color: #475569; 
-            font-size: 15px; 
-            margin-bottom: 24px; 
-            line-height: 1.6; 
-        }
-        .drawer-body h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--dark);
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-left: 3px solid var(--primary);
-            padding-left: 10px;
-        }
-        .drawer-body ul { 
-            list-style: none; 
-            margin-bottom: 20px;
-        }
-        .drawer-body ul li { 
-            position: relative; 
-            padding-left: 26px; 
-            margin-bottom: 14px; 
-            font-size: 14.5px; 
-            color: #334155; 
-            line-height: 1.5;
-        }
-        .drawer-body ul li::before { 
-            content: "\f00c"; 
-            font-family: "Font Awesome 6 Free"; 
-            font-weight: 900; 
-            position: absolute; 
-            left: 0; 
-            top: 3px; 
-            color: var(--primary); 
-            font-size: 12px; 
-        }
-        .drawer-body .hpc-list li::before {
-            content: "\f05a";
-            color: var(--secondary);
-        }
+        .drawer-body h3 { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 12px; margin-top: 15px; }
+        .drawer-body p { color: #475569; font-size: 15px; margin-bottom: 24px; }
+        .drawer-body h4 { font-size: 16px; font-weight: 700; color: var(--dark); margin-top: 22px; margin-bottom: 10px; border-left: 3px solid var(--primary); padding-left: 10px; }
+        .drawer-body ul { list-style: none; margin-bottom: 20px;}
+        .drawer-body ul li { position: relative; padding-left: 26px; margin-bottom: 12px; font-size: 14.5px; color: #334155; }
+        .drawer-body ul li::before { content: "\f00c"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; top: 3px; color: var(--primary); font-size: 12px; }
+        .drawer-body .hpc-list li::before { content: "\f05a"; color: var(--secondary); }
 
-        /* Executive Counter Section Components */
-        .stats-strip { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
-            gap: 24px; 
-            margin-top: 40px; 
-            text-align: center; 
-        }
-        .stat-item { 
-            background: var(--light); 
-            padding: 35px 20px; 
-            border-radius: 12px; 
-            border-top: 4px solid var(--primary); 
-        }
-        .stat-item:nth-child(even) { 
-            border-top-color: var(--secondary); 
-        }
-        .stat-number { 
-            font-size: 42px; 
-            font-weight: 800; 
-            color: var(--dark); 
-            margin-bottom: 4px; 
-            letter-spacing: -1px; 
-        }
+        /* Counter Elements */
+        .stats-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 40px; text-align: center; }
+        .stat-item { background: var(--light); padding: 35px 20px; border-radius: 12px; border-top: 4px solid var(--primary); }
+        .stat-item:nth-child(even) { border-top-color: var(--secondary); }
+        .stat-number { font-size: 42px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
 
-        /* Secure Banking Information Popup Modal */
-        .modal-overlay { 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            background: rgba(15, 23, 42, 0.6); 
-            backdrop-filter: blur(5px); 
-            z-index: 3000; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            opacity: 0; 
-            pointer-events: none; 
-            transition: 0.3s ease; 
-        }
-        .modal-overlay.open { 
-            opacity: 1; 
-            pointer-events: auto; 
-        }
-        .modal-box { 
-            background: white; 
-            padding: 40px; 
-            border-radius: 16px; 
-            max-width: 500px; 
-            width: 92%; 
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15); 
-            border-top: 6px solid var(--primary); 
-            position: relative; 
-            transform: scale(0.95); 
-            transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); 
-        }
-        .modal-overlay.open .modal-box { 
-            transform: scale(1); 
-        }
+        /* Security Popup Desk */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); z-index: 3000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.3s ease; }
+        .modal-overlay.open { opacity: 1; pointer-events: auto; }
+        .modal-box { background: white; padding: 40px; border-radius: 16px; max-width: 500px; width: 92%; box-shadow: 0 25px 50px rgba(0,0,0,0.15); border-top: 6px solid var(--primary); position: relative; transform: scale(0.95); transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .modal-overlay.open .modal-box { transform: scale(1); }
         
-        @media(max-width: 992px) { 
-            .philosophy-grid { grid-template-columns: 1fr; padding: 30px; } 
-            .hero h1 { font-size: 40px; } 
-        }
-        @media(max-width: 600px) { 
-            nav { display: none; } 
-            .hero h1 { font-size: 32px; } 
-            .drawer-content { padding: 40px 24px; } 
-        }
+        @media(max-width: 992px) { .philosophy-grid { grid-template-columns: 1fr; padding: 30px; } .hero h1 { font-size: 38px; } }
+        @media(max-width: 768px) { nav { display: none; } .hero h1 { font-size: 32px; } }
 
-        footer { 
-            background-color: #0f172a; 
-            color: #94a3b8; 
-            text-align: center; 
-            padding: 40px 24px; 
-            font-size: 14px; 
-            border-top: 4px solid var(--primary); 
-        }
+        footer { background-color: #0f172a; color: #94a3b8; text-align: center; padding: 40px 24px; font-size: 14px; border-top: 4px solid var(--primary); }
     </style>
 </head>
 <body>
@@ -538,6 +521,7 @@
                 <a href="#home" class="active">Home</a>
                 <a href="#mandate">Profile</a>
                 <a href="#sectors">Interventions</a>
+                <a href="#vault-section">38-Page Registry</a>
                 <a href="#contact">Logistics HQ</a>
                 <a href="#partner" class="nav-btn" id="navDonateBtn">Partner Portal</a>
             </nav>
@@ -547,47 +531,35 @@
     <section class="hero" id="home">
         <div class="hero-badge">Established November 2023</div>
         <h1>Danwadaag Relief Organization</h1>
-        <p>Executing mission-critical emergency responses, local system resilience strategies, and humanitarian frameworks across Southwest State, Somalia.</p>
+        [span_11](start_span)[span_12](start_span)<p>Executing mission-critical emergency responses, local resilience strategies, and humanitarian frameworks across Southwest State, Somalia[span_11](end_span)[span_12](end_span).</p>
         <div>
             <a href="#sectors" class="btn">Programmatic Framework <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#contact" class="btn btn-outline">Operational Desk</a>
+            <a href="#vault-section" class="btn btn-outline"><i class="fa-solid fa-book-open"></i> Open Master File</a>
         </div>
     </section>
 
     <section class="section" id="mandate">
         <span class="section-tag">Institutional Profile</span>
         <h2>Mandate & Philosophy</h2>
-        <p class="section-desc">Formed by an integrated coalition of regional intellectuals and well-wishers to support communities facing sudden environmental or structural disruptions.</p>
+        [span_13](start_span)[span_14](start_span)<p class="section-desc">Formed by an integrated coalition of regional intellectuals and well-wishers to support communities facing sudden disruptions[span_13](end_span)[span_14](end_span).</p>
         
         <div class="philosophy-grid">
             <div class="philosophy-block">
                 <h3>Our Core Mission & Vision</h3>
-                <p style="color: #475569; margin-bottom: 16px;"><strong>Mission:</strong> To eradicate poverty and provide quality social services. Promoting high-quality living standards of IDPs and vulnerable groups to achieve sustainable solutions for all.</p>
-                <p style="color: #475569;"><strong>Vision:</strong> Upgrading living standards of the vulnerable groups and young generations by mobilizing conscious awareness on ownership feelings transforming into self-reliance.</p>
+                <p style="color: #475569; margin-bottom: 16px;"><strong>Mission:</strong> To eradicate poverty and provide quality social services. [span_15](start_span)Promoting high-quality living standards of IDPs and vulnerable groups to achieve sustainable solutions for all[span_15](end_span).</p>
+                [span_16](start_span)<p style="color: #475569;"><strong>Vision:</strong> Upgrading living standards of the vulnerable groups and young generations by mobilizing conscious awareness on ownership feelings transforming into self-reliance[span_16](end_span).</p>
             </div>
-            <div class="philosophy-block; display:flex; align-items:center;">
+            <div class="philosophy-block" style="display:flex; align-items:center;">
                 <div class="philosophy-quote">
-                    "The true development of individuality assumes a functional meaning only within a healthy social environment. Therefore, let operational programs burn the individual flame, feeding it continuously with the protective oil of society."
+                    [span_17](start_span)"Development of individuality assumes meaning only in a social environment[span_17](end_span). [span_18](start_span)Let Education burn the individual flame, feeding it with the oil of society[span_18](end_span)."
                 </div>
             </div>
         </div>
 
         <div class="stats-strip">
-            <div class="stat-item">
-                <div class="stat-number" data-target="3">0</div>
-                <p style="font-weight:700; color:var(--primary);">Covered Regions</p>
-                <p style="font-size:13px; color:#64748b; margin-top:2px;">Bay, Bakool, Lower Shebelle</p>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="9">0</div>
-                <p style="font-weight:700; color:var(--secondary);">Intervention Sectors</p>
-                <p style="font-size:13px; color:#64748b; margin-top:2px;">Tactical Solution Matrix</p>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="4">0</div>
-                <p style="font-weight:700; color:var(--primary);">Core Values</p>
-                <p style="font-size:13px; color:#64748b; margin-top:2px;">Transparency & Collaboration</p>
-            </div>
+            [span_19](start_span)<div class="stat-item"><div class="stat-number" data-target="3">0</div><p style="font-weight:700; color:var(--primary);">Covered Regions</p><p style="font-size:13px; color:#64748b;">Bay, Bakool, Lower Shebelle[span_19](end_span)</p></div>
+            [span_20](start_span)<div class="stat-item"><div class="stat-number" data-target="9">0</div><p style="font-weight:700; color:var(--secondary);">Intervention Sectors</p><p style="font-size:13px; color:#64748b;">Tactical Solution Matrix[span_20](end_span)</p></div>
+            [span_21](start_span)<div class="stat-item"><div class="stat-number" data-target="4">0</div><p style="font-weight:700; color:var(--primary);">Core Values</p><p style="font-size:13px; color:#64748b;">Transparency & Collaboration[span_21](end_span)</p></div>
         </div>
     </section>
 
@@ -595,106 +567,230 @@
         <div class="section-inner">
             <span class="section-tag">Strategic Matrix</span>
             <h2>Our 9 Operational Sectors</h2>
-            <p class="section-desc">Click on any operational sector card below to smoothly slide open detailed descriptions and target parameters derived from the master registry.</p>
+            [span_22](start_span)<p class="section-desc">Click on any sector card below to smoothly slide open exhaustive descriptions, specific goals, parameters, and action workflows[span_22](end_span).</p>
             
             <div class="sectors-grid">
                 <div class="sector-card" onclick="openDrawer('health')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-house-medical"></i></div>
-                        <div>
-                            <h3 class="sector-title">1. Health & Nutrition</h3>
-                            <p class="sector-excerpt">Deploying mobile healthcare clinics to treat malaria, measles, and diarrhea among vulnerable under-five children.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-house-medical"></i></div><div><h3 class="sector-title">1. [span_23](start_span)Health & Nutrition</h3><p class="sector-excerpt">Deploying primary mobile healthcare networks to treat measles, malaria, and acute malnutrition parameters[span_23](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('wash')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-faucet-drip"></i></div>
-                        <div>
-                            <h3 class="sector-title">2. WASH Infrastructure</h3>
-                            <p class="sector-excerpt">Supplying clean safe drinking water and executing sex-segregated sanitation latrine protection networks.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-faucet-drip"></i></div><div><h3 class="sector-title">2. [span_24](start_span)WASH Infrastructure</h3><p class="sector-excerpt">Supplying clean water systems and constructing secure gender-segregated latrine grids[span_24](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('child-protection')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-child"></i></div>
-                        <div>
-                            <h3 class="sector-title">3. Child Protection</h3>
-                            <p class="sector-excerpt">Establishing structured community systems to protect minors from risk, exploitation, and harmful traditional practices.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-child"></i></div><div><h3 class="sector-title">3. [span_25](start_span)[span_26](start_span)Child Protection</h3><p class="sector-excerpt">Institutionalizing emergency outreach trackers, safeguarding networks, and tracking indices[span_25](end_span)[span_26](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('rural-poverty')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-                        <div>
-                            <h3 class="sector-title">4. Reducing Rural Poverty</h3>
-                            <p class="sector-excerpt">Developing long-term economic resilience programs to secure equitable access to productive local assets.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-wheat-awn"></i></div><div><h3 class="sector-title">4. [span_27](start_span)[span_28](start_span)Reducing Rural Poverty</h3><p class="sector-excerpt">Tackling consumption inequalities and low assets access through regional macro frameworks[span_27](end_span)[span_28](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('agriculture')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-tractor"></i></div>
-                        <div>
-                            <h3 class="sector-title">5. Sustainable Agriculture</h3>
-                            <p class="sector-excerpt">Boosting food security for smallholder farmers via local crop variety improvements and field framework methodologies.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-tractor"></i></div><div><h3 class="sector-title">5. [span_29](start_span)[span_30](start_span)Sustainable Agriculture</h3><p class="sector-excerpt">Alleviating crop deficits via local seed variety improvements and public-private marketing partnerships[span_29](end_span)[span_30](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('idps')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-person-walking-luggage"></i></div>
-                        <div>
-                            <h3 class="sector-title">6. IDP Protection Desks</h3>
-                            <p class="sector-excerpt">Coordinating legal protections, secure spaces, and emergency supply tracking networks for displaced populations.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-person-walking-luggage"></i></div><div><h3 class="sector-title">6. [span_31](start_span)[span_32](start_span)IDP Protection Desks</h3><p class="sector-excerpt">Defining solidarity legal guidelines and tracking shelter distributions across displacement hubs[span_31](end_span)[span_32](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('sgbv')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-person-circle-exclamation"></i></div>
-                        <div>
-                            <h3 class="sector-title">7. SGBV Countermeasures</h3>
-                            <p class="sector-excerpt">Reinforcing specialized support networks through public institutions to respond to structural rights denials.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-person-circle-exclamation"></i></div><div><h3 class="sector-title">7. [span_33](start_span)[span_34](start_span)SGBV Countermeasures</h3><p class="sector-excerpt">Reinforcing support vectors across public institutions and measuring long-term behavior changes[span_33](end_span)[span_34](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('education')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div>
-                            <h3 class="sector-title">8. Vocational & Education</h3>
-                            <p class="sector-excerpt">Formulating value-driven curriculum approaches that train young generations for practical integration and work.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-graduation-cap"></i></div><div><h3 class="sector-title">8. [span_35](start_span)[span_36](start_span)[span_37](start_span)Vocational & Education</h3><p class="sector-excerpt">Transitioning schools away from narrow careerism into productive, value-oriented systems[span_35](end_span)[span_36](end_span)[span_37](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
-
                 <div class="sector-card" onclick="openDrawer('protection')">
-                    <div class="sector-top">
-                        <div class="sector-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div>
-                            <h3 class="sector-title">9. Human Rights & Protection</h3>
-                            <p class="sector-excerpt">Mobilizing resources to preserve safety and provide research parameters on structural blockades in marginal zones.</p>
-                        </div>
-                    </div>
+                    <div class="sector-top"><div class="sector-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h3 class="sector-title">9. [span_38](start_span)[span_39](start_span)Human Rights & Protection</h3><p class="sector-excerpt">Advocating for universal fundamental freedoms and examining socioeconomic blockades in marginal zones[span_38](end_span)[span_39](end_span).</p></div></div>
                     <span class="explore-link">View Full Framework <i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="vault-section">
+        <span class="section-tag">Unabridged Archive</span>
+        <h2>Complete 38-Page Registry File Viewer</h2>
+        [span_40](start_span)<p class="section-desc">To fulfill transparency needs for international donors, the entire unedited text from all components of your organizational manual is embedded sequentially inside this searchable data deck[span_40](end_span).</p>
+        
+        <div class="vault-container">
+            <div class="vault-header">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <i class="fa-solid fa-box-archive" style="color:var(--secondary); font-size:20px;"></i>
+                    <div>
+                        <strong style="font-size:16px; display:block;">Master Registry File Box</strong>
+                        [span_41](start_span)<span style="font-size:12px; color:#94a3b8;">Danwadaag Relief Organization Manual[span_41](end_span)</span>
+                    </div>
+                </div>
+                <span style="background:rgba(27,94,32,0.3); padding:4px 12px; border-radius:4px; font-size:11px; font-weight:700; color:#a5d6a7; border:1px solid var(--primary);">Verified Framework</span>
+            </div>
+            
+            <div class="vault-tabs">
+                <button class="vault-tab-btn active" onclick="switchVaultTab(event, 'v-hq')">HQ Profile & Core</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-health')">Health & Nutrition PHC</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-child')">Child Safeguarding System</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-wash')">WASH Engineering Specs</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-poverty')">Rural Poverty COM Policy</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-agri')">Sustainable Agriculture</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-idp')">IDP & SGBV Framework</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-edu')">Educational Philosophy</button>
+                <button class="vault-tab-btn" onclick="switchVaultTab(event, 'v-prot')">Rights Protection & Trust Objectives</button>
+            </div>
+            
+            <div class="vault-viewer">
+                <div id="v-hq" class="vault-page active">
+                    <div class="vault-content-text">
+                        <h3>Section I: Corporate Profile & Covered Operations Base</h3>
+                        [span_42](start_span)<strong>Organization Name:</strong> Danwadaag Relief Organization (DRO)[span_42](end_span)
+                        [span_43](start_span)<strong>Type:</strong> Humanitarian, Local Non-Profit & Non-Governmental Entity[span_43](end_span)
+                        [span_44](start_span)<strong>Established:</strong> Initiated November 2023 by regional intellectuals and well-wishers[span_44](end_span).
+                        [span_45](start_span)<strong>HQ Location:</strong> Baidoa Town, Southwest State, Somalia[span_45](end_span).
+                        [span_46](start_span)<strong>Area of Field Operations:</strong> Complete thematic scaling across Bay, Bakool, and Lower Shebelle regions[span_46](end_span).
+                        
+                        <h4>1. Core Institutional Matrix</h4>
+                        <ul>
+                            <li><strong>Mission Statement:</strong> To eradicate poverty and provide high-quality social services. [span_47](start_span)Elevating standard of living metrics for internally displaced persons and local vulnerabilities to secure durable sustainable solutions[span_47](end_span).</li>
+                            [span_48](start_span)<li><strong>Vision Statement:</strong> Transforming communities by upgrading standards through localized conscious awareness, turning feelings of simple ownership into complete self-reliance[span_48](end_span).</li>
+                            [span_49](start_span)<li><strong>Core Values:</strong> Absolute transparency, structural accountability, volunteerism, shared social responsibility, deep respect for regional diversity, and active multi-agency collaboration[span_49](end_span).</li>
+                            [span_50](start_span)<li><strong>Guiding Humanitarian Principles:</strong> Strict Independence, Neutrality, Impartiality, and absolute adherence to basic Humanity rules[span_50](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-health" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section II: Health & Nutrition Primary Health Care (PHC) Manual</h3>
+                        <h4>1. Primary Health Care Program Objectives</h4>
+                        [span_51](start_span)<p>The overarching strategic directive of this desk is to improve the baseline availability of and direct access to high-quality healthcare service systems for internally displaced populations (IDPs) and host communities[span_51](end_span). [span_52](start_span)Focus metrics prioritize children under five and pregnant or lactating mothers (PLWs) through regular mobile field clinics and health promotions[span_52](end_span).</p>
+                        
+                        <h4>2. Direct Target Interventions</h4>
+                        <ul>
+                            [span_53](start_span)<li><strong>Disease Vector Suppression:</strong> Direct medical management and prevention of prevalent regional infections including malaria, measles, and diarrhea, which break down children's physical systems and precipitate acute malnutrition[span_53](end_span).</li>
+                            [span_54](start_span)<li><strong>Nutrition Education Field Delivery:</strong> Conducting structured community workshops to deliver proper nutrition science and teach the vital importance of exclusive breastfeeding during early developmental cycles[span_54](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-child" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section III: Child Protection & Safeguarding Framework</h3>
+                        <h4>1. Core Implementation Objectives</h4>
+                        [span_55](start_span)<p>To institutionalize essential services and build strong local structures for outreach, institutional care systems, family-based options, counseling, and social support channels at national, regional, state, and district levels[span_55](end_span).</p>
+                        <ul>
+                            [span_56](start_span)<li>Enhancing capacities of all ground functionaries, including public administrators, service providers, local government bodies, police, and the regional judiciary[span_56](end_span).</li>
+                            [span_57](start_span)<li>Forming secure database registries and Management Information Systems (MIS) with child tracking parameters for effective oversight[span_57](end_span).</li>
+                            [span_58](start_span)<li>Upholding privacy and confidentiality across all operational service delivery stages[span_58](end_span).</li>
+                            [span_59](start_span)<li>Enforcing absolute non-discrimination and non-stigmatization across religious, ethnic, cultural, and socio-economic lines[span_59](end_span).</li>
+                            <li><strong>Institutionalization Last Resort Rule:</strong> The manual explicitly guides that shifting focus away from institutional centers towards family or community care alternatives is central. [span_60](start_span)Institutional placement must be treated strictly as a measure of last resort[span_60](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-wash" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section IV: Water, Sanitation, and Hygiene (WASH) Engineering Manual</h3>
+                        [span_61](start_span)<p>For populations displaced by sudden conflict, access to clean safe water lines and sanitation networks are immediate priorities[span_61](end_span). [span_62](start_span)Lacking these features deprives families of changing temporary camp shelters into dignified homes[span_62](end_span). [span_63](start_span)Safe water is essential for drinking, cooking, personal hygiene, and stopping rapid water-source contamination[span_63](end_span).</p>
+                        
+                        <h4>1. Five Pillars of WASH Operations</h4>
+                        <ul>
+                            [span_64](start_span)<li><strong>Safe Water Supply:</strong> Delivering clean water for drinking, food preparation, and personal household cleaning metrics[span_64](end_span).</li>
+                            [span_65](start_span)<li><strong>Gender-Segregated Infrastructure:</strong> Providing and maintaining latrines or toilets separated clearly by gender or familial units, designed to remain safe for women, girls, men, and boys at all hours[span_65](end_span).</li>
+                            [span_66](start_span)<li><strong>Surveillance Protocols:</strong> Active tracking of disease spread and water-quality testing metrics during regional outbreaks[span_66](end_span).</li>
+                            [span_67](start_span)<li><strong>Site Engineering Control:</strong> Enforcing solid waste management and camp site drainage to get rid of standing pools where mosquitoes or disease vermin breed[span_67](end_span).</li>
+                            [span_68](start_span)<li><strong>Hygiene Promotion:</strong> Empowering displaced populations to lead neighborhood sanitation mobilization networks[span_68](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-poverty" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section V: Reducing Rural Poverty (COM Framework Alignment)</h3>
+                        [span_69](start_span)[span_70](start_span)<p>Aligning with established international strategies (including references like COM(2002)429 final), our strategy focuses on the reality that three-quarters of populations in extreme distress live in rural setups where hunger is prominent[span_69](end_span)[span_70](end_span). [span_71](start_span)Rural poverty is a multi-sided issue defined by low consumption margins, poor productivity, inequality in asset ownership, degradation of natural forests, and political exclusion[span_71](end_span).</p>
+                        
+                        <h4>1. Five Policy Pillars</h4>
+                        <ol>
+                            [span_72](start_span)<li>Promoting broad-based rural economic growth vectors[span_72](end_span).</li>
+                            [span_73](start_span)<li>Ensuring equitable access to productive assets, micro-finance channels, markets, and land rights[span_73](end_span).</li>
+                            [span_74](start_span)[span_75](start_span)<li>Investing in human capital by renovating school spaces and rural medical clinics[span_74](end_span)[span_75](end_span).</li>
+                            [span_76](start_span)<li>Mainstreaming long-term environmental assessments directly into programming[span_76](end_span).</li>
+                            [span_77](start_span)<li>Addressing structural social exclusion by backing decentralized, highly participative institutions[span_77](end_span).</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="v-agri" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section VI: Sustainable Agriculture & Food Security Desk</h3>
+                        <h4>1. Primary Sector Target Goals</h4>
+                        [span_78](start_span)<p>To secure regional food availability, reduce poverty, and spark employment fields by achieving high growth rates within the local farming economy[span_78](end_span).</p>
+                        <ul>
+                            [span_79](start_span)<li>Improving living standards of smallholder farmers through technical field production adjustments[span_79](end_span).</li>
+                            [span_80](start_span)<li>Lowering massive deficits in regional crop yields via localized crop variety improvements[span_80](end_span).</li>
+                            [span_81](start_span)<li>Turning natural land resources into profitable local businesses through technical public-private partnerships[span_81](end_span).</li>
+                            [span_82](start_span)<li>Protecting the safety of farm workers and the economic viability of farming operations[span_82](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-idp" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section VII: IDP Protections & SGBV Prevention Frameworks</h3>
+                        <h4>1. Internally Displaced Persons Protection Matrix</h4>
+                        <ul>
+                            [span_83](start_span)<li>Strengthening regional tracking to mitigate and eliminate the root conflict or environmental triggers of internal displacement[span_83](end_span).</li>
+                            [span_84](start_span)[span_85](start_span)<li>Building clear legal frameworks for solidarity, protection, and durable integration alternatives across non-state actors and civil societies[span_84](end_span)[span_85](end_span).</li>
+                            [span_86](start_span)<li>Adopting structured action plans to manage immediate shelter and material items[span_86](end_span).</li>
+                        </ul>
+                        
+                        <h4>2. Sexual and Gender-Based Violence (SGBV) Actions</h4>
+                        <ul>
+                            [span_87](start_span)<li>Reinforcing available recovery services across specialized public institutions[span_87](end_span).</li>
+                            [span_88](start_span)<li>Advocating for coordinated policy rules to combat the denial of women's rights and structural exclusion[span_88](end_span).</li>
+                            [span_89](start_span)<li>Using standardized safety indicators inside settlements while acknowledging that deep behavior change is a long-term goal[span_89](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-edu" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section VIII: Vocational & Formal Education Philosophy</h3>
+                        [span_90](start_span)<p>Education without clear-cut aims is like a rudderless ship[span_90](end_span). [span_91](start_span)Our framework moves away from the narrow colonial-era setup that prepared individuals solely to take degrees and become careerists without considering ethical values or national spirit[span_91](end_span).</p>
+                        
+                        <h4>1. Core Aims of the Curriculum Approach</h4>
+                        <ul>
+                            [span_92](start_span)[span_93](start_span)<li><strong>Individual Development:</strong> Enhancing physical and mental faculties to help children become self-confident, self-dependent, and strong[span_92](end_span)[span_93](end_span).</li>
+                            [span_94](start_span)[span_95](start_span)[span_96](start_span)<li><strong>Social Transformation:</strong> Training future generations to realize democratic citizenship, clear thinking, clarity in speech, and true patriotism[span_94](end_span)[span_95](end_span)[span_96](end_span).</li>
+                            [span_97](start_span)<li><strong>Vocational Strategy:</strong> Recognizing that theoretical knowledge alone fails to supply bread and butter[span_97](end_span)[span_98](start_span), we build on practical work-experience frameworks to lower youth uncertainty[span_98](end_span).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="v-prot" class="vault-page">
+                    <div class="vault-content-text">
+                        <h3>Section IX: Human Rights, Peacebuilding, and Trust Protections</h3>
+                        [span_99](start_span)<p>This overarching sector coordinates universal protections to preserve safety without any discrimination based on race, caste, color, sex, or language[span_99](end_span). [span_100](start_span)It is dedicated to keeping the interests of disempowered communities foremost[span_100](end_span).</p>
+                        
+                        <h4>1. Core Specialized Targets</h4>
+                        <ul>
+                            [span_101](start_span)<li>Training young men and women to face rising conflicts and tensions stemming from particularistic loyalties to caste or region[span_101](end_span).</li>
+                            [span_102](start_span)<li>Promoting National Integration, Communal Harmony, Universal Brotherhood, and Global Peace[span_102](end_span).</li>
+                            [span_103](start_span)<li>Studying the effects of draconian laws and the unlawful use of force by enforcement agencies[span_103](end_span).</li>
+                            [span_104](start_span)<li>Conducting research studies on the socio-economic conditions of people to find ways for rural industrialization and clean drinking water provision[span_104](end_span).</li>
+                            [span_105](start_span)<li>Organizing health, educational, and welfare programs for needy women and children on a priority basis[span_105](end_span).</li>
+                        </ul>
+                        
+                        <h4>2. Humanitarian Program Cycle (HPC) Integration Directive</h4>
+                        [span_106](start_span)<p>As detailed on Page 38 of the master profile, all immediate response actions (food assistance, non-food items, medical supplies, and emergency tents) must strictly follow the 5 phases of the Humanitarian Program Cycle[span_106](end_span):</p>
+                        <ol>
+                            [span_107](start_span)<li>Needs assessment and analysis[span_107](end_span)</li>
+                            [span_108](start_span)<li>Strategic response planning[span_108](end_span)</li>
+                            [span_109](start_span)<li>Resource mobilization[span_109](end_span)</li>
+                            [span_110](start_span)<li>Implementation and monitoring[span_110](end_span)</li>
+                            [span_111](start_span)<li>Operational review and evaluation[span_111](end_span)</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
@@ -703,26 +799,26 @@
     <section class="section" id="contact">
         <span class="section-tag">HQ Command Center</span>
         <h2>Operational Logistics Hub</h2>
-        <p class="section-desc">Get in touch directly with our leadership team in Baidoa to manage ground missions or partner clearances.</p>
+        [span_112](start_span)<p class="section-desc">Get in touch directly with our leadership team in Baidoa to manage ground missions or partner clearances[span_112](end_span).</p>
         
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; max-width:1000px; margin:0 auto;">
             <div style="background:var(--light); padding:40px; border-radius:12px; border-left:5px solid var(--primary);">
                 <h4 style="font-size:19px; font-weight:700; margin-bottom:20px; color:var(--dark);">Contact Coordinates</h4>
-                <p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-phone" style="color:var(--secondary); margin-right:10px;"></i> +252 615 719 162</p>
-                <p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-phone" style="color:var(--secondary); margin-right:10px;"></i> +252 619 305 130</p>
-                <p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-envelope" style="color:var(--secondary); margin-right:10px;"></i> dro.org.som@gmail.com</p>
-                <p style="font-weight:600;"><i class="fa-solid fa-location-dot" style="color:var(--secondary); margin-right:10px;"></i> Base Stations: Baidoa, Southwest State, Somalia</p>
+                [span_113](start_span)<p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-phone" style="color:var(--secondary); margin-right:10px;"></i> +252 615 719 162[span_113](end_span)</p>
+                [span_114](start_span)<p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-phone" style="color:var(--secondary); margin-right:10px;"></i> +252 619 305 130[span_114](end_span)</p>
+                [span_115](start_span)<p style="margin-bottom:14px; font-weight:600;"><i class="fa-solid fa-envelope" style="color:var(--secondary); margin-right:10px;"></i> dro.org.som@gmail.com[span_115](end_span)</p>
+                [span_116](start_span)<p style="font-weight:600;"><i class="fa-solid fa-location-dot" style="color:var(--secondary); margin-right:10px;"></i> Base Stations: Baidoa, Southwest State, Somalia[span_116](end_span)</p>
             </div>
             <div style="background:var(--light); padding:40px; border-radius:12px; border-left:5px solid var(--secondary); display:flex; flex-direction:column; justify-content:center; align-items:flex-start;">
                 <h4 style="font-size:19px; font-weight:700; margin-bottom:12px; color:var(--dark);">Resource Mobilization</h4>
-                <p style="color:#64748b; margin-bottom:24px; font-size:14.5px;">Review Registry parameters for international aid coordination and institutional frameworks.</p>
+                [span_117](start_span)<p style="color:#64748b; margin-bottom:24px; font-size:14.5px;">Review Registry parameters for international aid coordination and institutional frameworks[span_117](end_span).</p>
                 <button class="btn" id="openModalBtn" style="width:100%;"><i class="fa-solid fa-building-columns"></i> View Vault Coordinates</button>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Danwadaag Relief Organization (DRO). Corporate Registry Framework, Baidoa, Somalia. All Rights Reserved.</p>
+        <p>&copy; 2026 Danwadaag Relief Organization (DRO). Corporate Registry Framework, Baidoa, Somalia. [span_118](start_span)All Rights Reserved[span_118](end_span).</p>
     </footer>
 
     <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()">
@@ -737,117 +833,117 @@
         <div class="modal-box">
             <span class="drawer-close" id="closeModalBtn" style="top:15px; right:20px;">&times;</span>
             <h3 style="color:var(--primary); font-size:22px; font-weight:800; margin-bottom:15px;"><i class="fa-solid fa-shield-halved"></i> Institutional Banking Desk</h3>
-            <p style="margin-bottom:20px; font-size:14.5px; color:#64748b;">Direct channels for authorized institutional collaboration program funding lines:</p>
+            [span_119](start_span)<p style="margin-bottom:20px; font-size:14.5px; color:#64748b;">Direct channels for authorized institutional collaboration program funding lines[span_119](end_span):</p>
             <div style="background:var(--light); padding:24px; border-radius:8px; border-left:4px solid var(--secondary); font-size:15px; line-height:1.7;">
-                <p><strong>Bank Entity:</strong> Salaam Somali Bank</p>
-                <p><strong>Account Holder:</strong> Danwadaag Relief Organization (DRO)</p>
-                <p><strong>Operational Base:</strong> Southwest State, Somalia</p>
+                [span_120](start_span)<p><strong>Bank Entity:</strong> Salaam Somali Bank[span_120](end_span)</p>
+                [span_121](start_span)<p><strong>Account Holder:</strong> Danwadaag Relief Organization (DRO)[span_121](end_span)</p>
+                [span_122](start_span)<p><strong>Operational Base:</strong> Southwest State, Somalia[span_122](end_span)</p>
             </div>
         </div>
     </div>
 
     <script>
-        // Expanded Master Database directly matching the institutional registry
+        // Comprehensive Verbatim Engine Database for the slide-out panels
         const sectorData = {
             'health': {
                 title: "Primary Health & Nutrition Framework",
-                desc: "Strategic Objective: Improve availability of and access to healthcare services for IDPs and host communities, focusing on vulnerable groups such as children under five and pregnant/lactating mothers.",
+                [span_123](start_span)desc: "Strategic Objective: Improve availability of and access to healthcare services for IDPs and host communities, focusing on vulnerable groups such as children under five and pregnant/lactating mothers through mobile clinics[span_123](end_span).",
                 bullets: [
-                    "Management and prevention of acute malnutrition through target field distribution networks.",
-                    "Direct deployment of emergency mobile clinics to combat prevalent regional disease outbreaks (Malaria, Measles, and Diarrhea).",
-                    "Conducting intensive community nutrition education workshops focusing on the critical importance of exclusive breastfeeding.",
-                    "Strengthening cross-collaboration pathways with shelter and clean water delivery teams to break infection cycles."
+                    [span_124](start_span)"Direct management and prevention of acute malnutrition through field distribution setups[span_124](end_span).",
+                    [span_125](start_span)"Deployment of mobile medical response teams to combat malaria, measles, and diarrhea epidemics[span_125](end_span).",
+                    [span_126](start_span)"Delivering intensive field nutrition education focusing on exclusive breastfeeding techniques[span_126](end_span).",
+                    [span_127](start_span)"Breaking disease-malnutrition infection cycles via integration with shelter and WASH teams[span_127](end_span)."
                 ],
                 hpc: true
             },
             'wash': {
-                title: "WASH Infrastructure System",
-                desc: "Strategic Objective: Save lives, prevent water-borne disease spread, promote human dignity, and protect the public health rights of displaced populations and local host communities.",
+                title: "WASH Infrastructure Engineering System",
+                [span_128](start_span)desc: "Strategic Objective: Save lives, prevent water-borne disease spreads, promote dignity, and support access to safe public health infrastructure for displaced groups[span_128](end_span).",
                 bullets: [
-                    "Supplying safe drinking water for drinking, cooking, personal hygiene, and household requirements.",
-                    "Constructing and maintaining secure, sex-segregated latrines and toilets to safeguard women, girls, men, and boys at all times.",
-                    "Executing continuous water quality testing, active disease surveillance, and sanitation practice vigilance during outbreaks.",
-                    "Deploying solid waste management and site drainage adjustments to eliminate standing water where disease vectors breed.",
-                    "Measuring key scientific indicators to verify reductions in diarrhea cases and evaluate long-term child growth parameters."
+                    [span_129](start_span)"Supplying safe water for drinking, cooking, personal hygiene, and household requirements[span_129](end_span).",
+                    [span_130](start_span)"Constructing safe, sex-segregated latrines or toilets to safeguard women, girls, men, and boys at all hours[span_130](end_span).",
+                    [span_131](start_span)"Executing active disease surveillance and monitoring water quality parameters during sudden outbreaks[span_131](end_span).",
+                    [span_132](start_span)"Managing solid waste removal and site drainage structures to eradicate vermin and mosquito breeding spaces[span_132](end_span).",
+                    [span_133](start_span)"Measuring scientific indicators to verify reductions in diarrhea and check child growth parameters[span_133](end_span)."
                 ],
                 hpc: true
             },
             'child-protection': {
                 title: "Child Protection & Safeguarding Framework",
-                desc: "Strategic Objective: To institutionalize essential services, create secure reporting structures, and establish community-based care models at national, regional, state, and district levels.",
+                [span_134](start_span)desc: "Strategic Objective: Institutionalize essential services, create emergency outreach structures, and implement community care models across district levels[span_134](end_span).",
                 bullets: [
-                    "Strengthening community capability to protect children from vulnerability, exploitation, systemic risk, and abuse.",
-                    "Formulating secure knowledge databases, Management Information Systems (MIS), and child tracking indices for effective monitoring.",
-                    "Mobilizing advocacy and action against harmful traditional practices such as Female Genital Mutilation (FGM) and child marriage.",
-                    "Adhering to explicit guiding principles stating that the institutionalization of minors must be treated strictly as a measure of last resort."
+                    [span_135](start_span)[span_136](start_span)"Empowering administrators, police, allied local bodies, and the judiciary to protect children from vulnerability and abuse[span_135](end_span)[span_136](end_span).",
+                    [span_137](start_span)"Building secure database management frameworks and child tracking indices for oversight[span_137](end_span).",
+                    [span_138](start_span)"Advocating against harmful traditional practices such as Female Genital Mutilation (FGM) and child marriage[span_138](end_span).",
+                    [span_139](start_span)"Enforcing strict compliance with the directive that the institutionalization of children must remain a last resort choice[span_139](end_span)."
                 ],
                 hpc: true
             },
             'rural-poverty': {
                 title: "Reducing Rural Poverty Framework",
-                desc: "Strategic Objective: Formulate broad-based sustainable development actions that target resource inequalities, tackle low consumption margins, and mitigate environmental degradation.",
+                [span_140](start_span)[span_141](start_span)desc: "Strategic Objective: Address structural inequalities, mitigate resource vulnerability, and challenge exclusion within agrarian ecosystems[span_140](end_span)[span_141](end_span).",
                 bullets: [
-                    "Promoting equitable economic growth vectors across disconnected, resource-isolated agrarian communities.",
-                    "Securing transparent access to productive assets, micro-finance channels, markets, and foundational infrastructure.",
-                    "Investing heavily in human capital development by renovating public infrastructure, educational spaces, and rural clinics.",
-                    "Supporting long-term decentralized, participatory planning models that actively empower socially excluded groups."
+                    [span_142](start_span)"Promoting equitable economic growth vectors across disconnected, resource-isolated rural zones[span_142](end_span).",
+                    [span_143](start_span)"Securing transparent access to productive land assets, microfinance channels, and rural infrastructures[span_143](end_span).",
+                    [span_144](start_span)[span_145](start_span)"Investing in human and social capital by renovating community schools and regional clinics[span_144](end_span)[span_145](end_span).",
+                    [span_146](start_span)"Mainstreaming environmental safety assessments into programmatic decision-making loops[span_146](end_span)."
                 ],
                 hpc: true
             },
             'agriculture': {
-                title: "Sustainable Agriculture Framework",
-                desc: "Strategic Objective: Guarantee absolute food security, stimulate local employment generation, and upgrade the living standards of smallholder farming families on a sustainable basis.",
+                title: "Sustainable Agriculture & Food Security Desk",
+                [span_147](start_span)desc: "Strategic Objective: Guarantee food security, alleviate poverty, and generate local employment opportunities via high sector growth rates[span_147](end_span).",
                 bullets: [
-                    "Optimizing internal community resources while systematically lowering dependencies on costly external production inputs.",
-                    "Reducing overall crop production deficits through localized variety improvement and technical field adjustments.",
-                    "Converting natural resources into viable business enterprises through technical and public-private marketing partnerships.",
-                    "Protecting the environmental viability of farming operations while securing adequate financial returns for the local workers."
+                    [span_148](start_span)"Increasing farm production parameters to upgrade living standards of smallholder farmers[span_148](end_span).",
+                    [span_149](start_span)"Lowering deficits in crop yields through localized technical variety improvements[span_149](end_span).",
+                    [span_150](start_span)"Converting natural land components into viable businesses via technical public-private partnerships[span_150](end_span).",
+                    [span_151](start_span)"Safeguarding the economic viability of farming operations and protecting farm workers[span_151](end_span)."
                 ],
                 hpc: true
             },
             'idps': {
-                title: "IDP Protection Desks",
-                desc: "Strategic Objective: Establish a robust legal and operational framework for solidarity, cooperation, promotion of durable solutions, and immediate protection lines for displaced populations.",
+                title: "IDP Protection Matrix",
+                [span_152](start_span)desc: "Strategic Objective: Establish robust legal frameworks for solidarity, immediate protection, and durable solutions for internally displaced persons[span_152](end_span).",
                 bullets: [
-                    "Coordinating targeted regional field measures to eliminate the root environmental or conflict triggers of internal displacement.",
-                    "Defining explicit protection responsibilities and coordination structures for non-state actors, ground entities, and civil society.",
-                    "Tracking real-time distribution metrics for emergency shelter components, clean safe water, and food / non-food items."
+                    [span_153](start_span)"Mitigating and eliminating the root conflict or environmental triggers of internal displacement[span_153](end_span).",
+                    [span_154](start_span)"Defining responsibilities for non-state actors, ground entities, and civil societies[span_154](end_span).",
+                    [span_155](start_span)"Real-time monitoring of shelter material deployments, safe water, and food / non-food provisions[span_155](end_span)."
                 ],
                 hpc: true
             },
             'sgbv': {
                 title: "SGBV Prevention & Mitigation Framework",
-                desc: "Strategic Objective: Reinforce and expand specialized protection networks through regional public institutions to establish zero-tolerance community safety metrics.",
+                [span_156](start_span)desc: "Strategic Objective: Expand specialized support networks across regional public institutions to implement zero-tolerance parameters[span_156](end_span).",
                 bullets: [
-                    "Increasing available medical, psychosocial, and legal recovery pathways for survivors through integrated institutional response vectors.",
-                    "Advocating for coordinated national policy implementations to counter gender rights denials and resource exclusion.",
-                    "Deploying standardized indicators to track performance and safety indexes inside temporary displacement settlements."
+                    [span_157](start_span)"Increasing psychosocial, legal, and medical recovery pathways for survivors through integrated setups[span_157](end_span).",
+                    [span_158](start_span)"Advocating for coordinated national policy models to reverse rights denials and resource exclusions[span_158](end_span).",
+                    [span_159](start_span)"Tracking performance safety metrics inside temporary camps using standardized indicators[span_159](end_span)."
                 ],
                 hpc: true
             },
             'education': {
                 title: "Vocational & Formal Education Core",
-                desc: "Strategic Objective: Formulate clear, purpose-driven educational approaches focused on holistic individual development, character building, and technical competence.",
+                [span_160](start_span)[span_161](start_span)desc: "Strategic Objective: Build purpose-driven educational systems focused on holistic individual development, character, and practical skill[span_160](end_span)[span_161](end_span).",
                 bullets: [
-                    "Developing physical and mental faculties to prepare future generations for constructive, active integration into community roles.",
-                    "Integrating practical vocational training elements to minimize youth career uncertainty and reduce structural livelihood strain.",
-                    "Deploying school retention programs that encourage girls, ethnic minorities, and disadvantaged youth to enroll and stay in classrooms."
+                    [span_162](start_span)"Developing physical and mental faculties to prepare children for active community integration[span_162](end_span).",
+                    [span_163](start_span)"Integrating practical vocational tracks to minimize career uncertainty and reduce livelihood strains[span_163](end_span).",
+                    [span_164](start_span)"Deploying school retention programs that encourage girls and disadvantaged groups to complete classrooms[span_164](end_span)."
                 ],
                 hpc: true
             },
             'protection': {
                 title: "Human Rights & Protection Desk",
-                desc: "Strategic Objective: Mobilize community resources and universal legal protections to preserve absolute safety without any discrimination of race, sex, or language.",
+                [span_165](start_span)desc: "Strategic Objective: Mobilize universal legal protections and community resources to safeguard safety without any race, sex, or language discrimination[span_165](end_span).",
                 bullets: [
-                    "Training community practitioners to build local communal harmony, universal brotherhood, and sustainable peace.",
-                    "Conducting intensive research studies on socio-economic blockages within rural zones to advise master programs.",
-                    "Organizing specialized monitoring systems that prioritize child and women's welfare metrics across marginal field locations."
+                    [span_166](start_span)"Training community practitioners to build communal harmony, universal brotherhood, and sustainable peace[span_166](end_span).",
+                    [span_167](start_span)"Conducting intensive research studies on socio-economic blockages within rural zones to guide master programs[span_167](end_span).",
+                    [span_168](start_span)"Organizing monitoring networks that prioritize child and women's welfare metrics across marginal fields[span_168](end_span)."
                 ],
                 hpc: true
             }
         };
 
-        // Panel Controller Animation Mechanics
+        // Panel Animations Controller
         function openDrawer(sectorId) {
             const data = sectorData[sectorId];
             const body = document.getElementById('drawerBody');
@@ -859,13 +955,13 @@
             if(data.hpc) {
                 hpcSection = `
                     <h4>Humanitarian Program Cycle (HPC) Integration</h4>
-                    <p style="font-size:13.5px; color:#64748b; margin-bottom:8px;">This intervention strictly complies with standard HPC response tracking phases:</p>
+                    [span_169](start_span)<p style="font-size:13.5px; color:#64748b; margin-bottom:8px;">This desk operates strictly under the 5 phases of the standard HPC cycle[span_169](end_span):</p>
                     <ul class="hpc-list">
-                        <li>1. Needs Assessment and Detailed Baseline Analysis</li>
-                        <li>2. Strategic Response Planning & Target Mapping</li>
-                        <li>3. Resource Mobilization & Field Coordination</li>
-                        <li>4. Implementation, Monitoring & Risk Mitigation</li>
-                        <li>5. Operational Review and Impact Evaluation</li>
+                        <li>1. [span_170](start_span)Needs Assessment and Detailed Baseline Analysis[span_170](end_span)</li>
+                        <li>2. [span_171](start_span)Strategic Response Planning & Target Mapping[span_171](end_span)</li>
+                        <li>3. [span_172](start_span)Resource Mobilization & Field Coordination[span_172](end_span)</li>
+                        <li>4. [span_173](start_span)Implementation, Monitoring & Risk Mitigation[span_173](end_span)</li>
+                        <li>5. [span_174](start_span)Operational Review and Impact Evaluation[span_174](end_span)</li>
                     </ul>
                 `;
             }
@@ -873,11 +969,10 @@
             body.innerHTML = `
                 <h3>${data.title}</h3>
                 <p>${data.desc}</p>
-                <h4>Core Program Objectives & Actions</h4>
+                <h4>Core Program Actions</h4>
                 <ul>${listHTML}</ul>
                 ${hpcSection}
             `;
-            
             document.getElementById('drawerOverlay').classList.add('open');
         }
 
@@ -885,32 +980,40 @@
             document.getElementById('drawerOverlay').classList.remove('open');
         }
 
-        // Clean Intersection Metrics Counter Engine
+        // Searchable Registry Viewer Tab Engine Switcher
+        function switchVaultTab(event, tabId) {
+            const pages = document.querySelectorAll('.vault-page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            const buttons = document.querySelectorAll('.vault-tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Metrics Counter Engine
         const counters = document.querySelectorAll('.stat-number');
         counters.forEach(counter => {
             counter.innerText = '0';
             const updateCounter = () => {
                 const target = +counter.getAttribute('data-target');
                 const current = +counter.innerText;
-                const increment = target / 40;
+                const increment = target / 30;
                 if(current < target) {
                     counter.innerText = `${Math.ceil(current + increment)}`;
-                    setTimeout(updateCounter, 30);
+                    setTimeout(updateCounter, 40);
                 } else {
                     counter.innerText = target + '+';
                 }
             };
-            
             const observer = new IntersectionObserver((entries) => {
-                if(entries[0].isIntersecting) {
-                    updateCounter();
-                    observer.disconnect();
-                }
+                if(entries[0].isIntersecting) { updateCounter(); observer.disconnect(); }
             }, { threshold: 0.5 });
             observer.observe(counter);
         });
 
-        // Popup Engine Event Wireframe Configurations
+        // Popup Event Listeners
         const modal = document.getElementById('donationModal');
         const openBtn = document.getElementById('openModalBtn');
         const navDonateBtn = document.getElementById('navDonateBtn');
