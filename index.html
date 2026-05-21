@@ -367,9 +367,9 @@
         .drawer-content { 
             position: fixed; 
             top: 0; 
-            right: -600px; 
+            right: -650px; 
             width: 100%; 
-            max-width: 580px; 
+            max-width: 620px; 
             height: 100%; 
             background: white; 
             z-index: 2001; 
@@ -400,6 +400,7 @@
             color: var(--dark); 
             margin-bottom: 12px; 
             margin-top: 15px; 
+            line-height: 1.2;
         }
         .drawer-body p { 
             color: #475569; 
@@ -407,8 +408,18 @@
             margin-bottom: 24px; 
             line-height: 1.6; 
         }
+        .drawer-body h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 3px solid var(--primary);
+            padding-left: 10px;
+        }
         .drawer-body ul { 
             list-style: none; 
+            margin-bottom: 20px;
         }
         .drawer-body ul li { 
             position: relative; 
@@ -427,6 +438,10 @@
             top: 3px; 
             color: var(--primary); 
             font-size: 12px; 
+        }
+        .drawer-body .hpc-list li::before {
+            content: "\f05a";
+            color: var(--secondary);
         }
 
         /* Executive Counter Section Components */
@@ -550,7 +565,7 @@
                 <p style="color: #475569; margin-bottom: 16px;"><strong>Mission:</strong> To eradicate poverty and provide quality social services. Promoting high-quality living standards of IDPs and vulnerable groups to achieve sustainable solutions for all.</p>
                 <p style="color: #475569;"><strong>Vision:</strong> Upgrading living standards of the vulnerable groups and young generations by mobilizing conscious awareness on ownership feelings transforming into self-reliance.</p>
             </div>
-            <div class="philosophy-block" style="display:flex; align-items:center;">
+            <div class="philosophy-block; display:flex; align-items:center;">
                 <div class="philosophy-quote">
                     "The true development of individuality assumes a functional meaning only within a healthy social environment. Therefore, let operational programs burn the individual flame, feeding it continuously with the protective oil of society."
                 </div>
@@ -732,90 +747,103 @@
     </div>
 
     <script>
-        // Data containing full profile content cleanly structured without formatting tags
+        // Expanded Master Database directly matching the institutional registry
         const sectorData = {
             'health': {
                 title: "Primary Health & Nutrition Framework",
-                desc: "Strategic Objective: Improve availability of and access to health care services for IDPs and host communities, focusing on vulnerable children and infants through mobile medical clinics.",
+                desc: "Strategic Objective: Improve availability of and access to healthcare services for IDPs and host communities, focusing on vulnerable groups such as children under five and pregnant/lactating mothers.",
                 bullets: [
-                    "Management and prevention of acute malnutrition among children under five and pregnant/lactating mothers.",
-                    "Direct delivery of emergency mobile clinics to combat prevalent regional disease outbreaks (Malaria, Measles, and Diarrhea).",
-                    "Conducting proper community nutrition education and tracking the importance of exclusive breastfeeding practices."
-                ]
+                    "Management and prevention of acute malnutrition through target field distribution networks.",
+                    "Direct deployment of emergency mobile clinics to combat prevalent regional disease outbreaks (Malaria, Measles, and Diarrhea).",
+                    "Conducting intensive community nutrition education workshops focusing on the critical importance of exclusive breastfeeding.",
+                    "Strengthening cross-collaboration pathways with shelter and clean water delivery teams to break infection cycles."
+                ],
+                hpc: true
             },
             'wash': {
                 title: "WASH Infrastructure System",
-                desc: "Objective: Save lives, prevent water-borne disease spread, promote human dignity, and support structural access to healthy living standards for displaced families.",
+                desc: "Strategic Objective: Save lives, prevent water-borne disease spread, promote human dignity, and protect the public health rights of displaced populations and local host communities.",
                 bullets: [
-                    "Supplying clean safe water directly for drinking, cooking, personal hygiene, and household requirements.",
-                    "Constructing and maintaining secure, sex-segregated latrines and toilets to protect women, girls, men, and boys.",
-                    "Executing active disease surveillance and intensive water quality testing during environmental emergencies.",
-                    "Measuring key sanitation indicators to secure child development and evaluate reductions in diarrhea cases."
-                ]
+                    "Supplying safe drinking water for drinking, cooking, personal hygiene, and household requirements.",
+                    "Constructing and maintaining secure, sex-segregated latrines and toilets to safeguard women, girls, men, and boys at all times.",
+                    "Executing continuous water quality testing, active disease surveillance, and sanitation practice vigilance during outbreaks.",
+                    "Deploying solid waste management and site drainage adjustments to eliminate standing water where disease vectors breed.",
+                    "Measuring key scientific indicators to verify reductions in diarrhea cases and evaluate long-term child growth parameters."
+                ],
+                hpc: true
             },
             'child-protection': {
                 title: "Child Protection & Safeguarding Framework",
-                desc: "Objective: Formulate comprehensive community tracking databases, emergency MIS structures, and counseling networks to insulate minors from systematic risk.",
+                desc: "Strategic Objective: To institutionalize essential services, create secure reporting structures, and establish community-based care models at national, regional, state, and district levels.",
                 bullets: [
-                    "Strengthening structured family and community capabilities to protect children from vulnerability, abuse, and exploitation.",
-                    "Creating specialized child tracking systems and database management parameters for transparent outcome monitoring.",
-                    "Executing active defense lines against harmful traditional practices like Female Genital Mutilation (FGM) and child marriage.",
-                    "Enforcing guidelines stating that institutionalization of children must always be utilized strictly as a measure of last resort."
-                ]
+                    "Strengthening community capability to protect children from vulnerability, exploitation, systemic risk, and abuse.",
+                    "Formulating secure knowledge databases, Management Information Systems (MIS), and child tracking indices for effective monitoring.",
+                    "Mobilizing advocacy and action against harmful traditional practices such as Female Genital Mutilation (FGM) and child marriage.",
+                    "Adhering to explicit guiding principles stating that the institutionalization of minors must be treated strictly as a measure of last resort."
+                ],
+                hpc: true
             },
             'rural-poverty': {
                 title: "Reducing Rural Poverty Framework",
-                desc: "Objective: Create dynamic, localized structural development strategies that neutralize economic isolation and eradicate resource marginalization.",
+                desc: "Strategic Objective: Formulate broad-based sustainable development actions that target resource inequalities, tackle low consumption margins, and mitigate environmental degradation.",
                 bullets: [
-                    "Promoting broad-based rural economic development vectors across disconnected agrarian communities.",
-                    "Ensuring more equitable local access to productive assets, micro-finance channels, and stable market connections.",
-                    "Upgrading physical educational infrastructure and primary public healthcare facilities across remote operational fields."
-                ]
+                    "Promoting equitable economic growth vectors across disconnected, resource-isolated agrarian communities.",
+                    "Securing transparent access to productive assets, micro-finance channels, markets, and foundational infrastructure.",
+                    "Investing heavily in human capital development by renovating public infrastructure, educational spaces, and rural clinics.",
+                    "Supporting long-term decentralized, participatory planning models that actively empower socially excluded groups."
+                ],
+                hpc: true
             },
             'agriculture': {
                 title: "Sustainable Agriculture Framework",
-                desc: "Objective: Guarantee absolute food security, stimulate local employment generations, and improve the immediate living standards of smallholder farmers.",
+                desc: "Strategic Objective: Guarantee absolute food security, stimulate local employment generation, and upgrade the living standards of smallholder farming families on a sustainable basis.",
                 bullets: [
-                    "Optimizing community resources while systematically lowering dependence on costly external production inputs.",
-                    "Lowering crop yield drop-offs via local crop variety improvements and field method adjustments.",
-                    "Converting natural resources into viable business enterprises through scientific, technical, and public-private partnerships."
-                ]
+                    "Optimizing internal community resources while systematically lowering dependencies on costly external production inputs.",
+                    "Reducing overall crop production deficits through localized variety improvement and technical field adjustments.",
+                    "Converting natural resources into viable business enterprises through technical and public-private marketing partnerships.",
+                    "Protecting the environmental viability of farming operations while securing adequate financial returns for the local workers."
+                ],
+                hpc: true
             },
             'idps': {
                 title: "IDP Protection Desks",
-                desc: "Objective: Establish a robust operational framework for solidarity, cooperation, promotion of durable solutions, and immediate protection lines for displaced citizens.",
+                desc: "Strategic Objective: Establish a robust legal and operational framework for solidarity, cooperation, promotion of durable solutions, and immediate protection lines for displaced populations.",
                 bullets: [
-                    "Coordinating regional and localized measures to mitigate and eliminate the root environmental or conflict triggers of displacement.",
-                    "Defining explicit protection responsibilities for non-state actors, ground partners, and civil society networks.",
-                    "Tracking emergency aid distribution, shelter options, and immediate food/non-food security items."
-                ]
+                    "Coordinating targeted regional field measures to eliminate the root environmental or conflict triggers of internal displacement.",
+                    "Defining explicit protection responsibilities and coordination structures for non-state actors, ground entities, and civil society.",
+                    "Tracking real-time distribution metrics for emergency shelter components, clean safe water, and food / non-food items."
+                ],
+                hpc: true
             },
             'sgbv': {
                 title: "SGBV Prevention & Mitigation Framework",
-                desc: "Objective: Reinforce and expand support systems through regional public institutions to protect rights and establish zero-tolerance models.",
+                desc: "Strategic Objective: Reinforce and expand specialized protection networks through regional public institutions to establish zero-tolerance community safety metrics.",
                 bullets: [
-                    "Increasing available medical, social, and legal recovery paths for victims through integrated institutional networks.",
-                    "Advocating for coordinated regional legal policies to push back against gender rights denials.",
-                    "Deploying standard monitoring indicators to analyze and counter violence tracks in temporary settlements."
-                ]
+                    "Increasing available medical, psychosocial, and legal recovery pathways for survivors through integrated institutional response vectors.",
+                    "Advocating for coordinated national policy implementations to counter gender rights denials and resource exclusion.",
+                    "Deploying standardized indicators to track performance and safety indexes inside temporary displacement settlements."
+                ],
+                hpc: true
             },
             'education': {
                 title: "Vocational & Formal Education Core",
-                desc: "Objective: Formulate clear, purpose-driven programs focused on character building, mental capability extension, and long-term financial self-reliance.",
+                desc: "Strategic Objective: Formulate clear, purpose-driven educational approaches focused on holistic individual development, character building, and technical competence.",
                 bullets: [
-                    "Developing individual capabilities to ready young generations for constructive integration into community roles.",
-                    "Integrating modern vocational training elements to lower youth stress and career uncertainty indices.",
-                    "Deploying school support programs to increase enrollment and keep girls and marginalized children in classrooms."
-                ]
+                    "Developing physical and mental faculties to prepare future generations for constructive, active integration into community roles.",
+                    "Integrating practical vocational training elements to minimize youth career uncertainty and reduce structural livelihood strain.",
+                    "Deploying school retention programs that encourage girls, ethnic minorities, and disadvantaged youth to enroll and stay in classrooms."
+                ],
+                hpc: true
             },
             'protection': {
                 title: "Human Rights & Protection Desk",
-                desc: "Objective: Mobilize community natural resources and legal awareness parameters to preserve safety without any discrimination of race, sex, or language.",
+                desc: "Strategic Objective: Mobilize community resources and universal legal protections to preserve absolute safety without any discrimination of race, sex, or language.",
                 bullets: [
-                    "Training young community practitioners to build communal harmony, universal brotherhood, and local peace.",
-                    "Conducting deep research studies on socio-economic blockages within rural zones to advise master programs.",
-                    "Organizing specific safety monitors focusing explicitly on child and women's welfare metrics."
-                ]
+                    "Training community practitioners to build local communal harmony, universal brotherhood, and sustainable peace.",
+                    "Conducting intensive research studies on socio-economic blockages within rural zones to advise master programs.",
+                    "Organizing specialized monitoring systems that prioritize child and women's welfare metrics across marginal field locations."
+                ],
+                hpc: true
             }
         };
 
@@ -827,11 +855,27 @@
             let listHTML = '';
             data.bullets.forEach(bullet => { listHTML += `<li>${bullet}</li>`; });
             
+            let hpcSection = '';
+            if(data.hpc) {
+                hpcSection = `
+                    <h4>Humanitarian Program Cycle (HPC) Integration</h4>
+                    <p style="font-size:13.5px; color:#64748b; margin-bottom:8px;">This intervention strictly complies with standard HPC response tracking phases:</p>
+                    <ul class="hpc-list">
+                        <li>1. Needs Assessment and Detailed Baseline Analysis</li>
+                        <li>2. Strategic Response Planning & Target Mapping</li>
+                        <li>3. Resource Mobilization & Field Coordination</li>
+                        <li>4. Implementation, Monitoring & Risk Mitigation</li>
+                        <li>5. Operational Review and Impact Evaluation</li>
+                    </ul>
+                `;
+            }
+            
             body.innerHTML = `
                 <h3>${data.title}</h3>
                 <p>${data.desc}</p>
-                <h4 style="font-size:15.5px; font-weight:700; margin-bottom:12px; color:var(--dark);">Core Action Targets:</h4>
+                <h4>Core Program Objectives & Actions</h4>
                 <ul>${listHTML}</ul>
+                ${hpcSection}
             `;
             
             document.getElementById('drawerOverlay').classList.add('open');
